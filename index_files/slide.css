@@ -1,0 +1,27 @@
+#slider ul, #slider li, #slider_1 li, #slider_2 li, #slider_3 li, #slider_4 li, #slider_5 li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+#slider, #slider_1, #slider_2, #slider_3, #slider_4, #slider_5, #slider li { 
+	width:500px;
+	height:200px;
+	overflow:hidden; 
+	}
+	
+	
+	
+span#prevBtn1{}
+span#nextBtn1{}	
+
+span#prevBtn2{}
+span#nextBtn2{}	
+
+span#prevBtn3{}
+span#nextBtn3{}	
+
+span#prevBtn4{}
+span#nextBtn4{}	
+
+span#prevBtn5{}
+span#nextBtn5{}

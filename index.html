@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title>
+	Splay</title>
+
+<link rel="stylesheet" id="contact-form-7-css" href="./index_files/stylesheet.css" type="text/css" media="all">
+<script type="text/javascript" src="./index_files/jquery.js"></script>
+
+
+<link rel="stylesheet" href="./index_files/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="./index_files/slide.css" type="text/css" media="screen">
+
+
+<script language="javascript" type="text/javascript" src="./index_files/navbar.js"></script>
+<script>
+    function playSound(id)
+    {
+        var node=document.getElementById('bsound');
+        if (node == null) {
+            node =  document.createElement("embed");
+            node.setAttribute('src', id);
+            node.setAttribute('id', 'bsound');
+            node.setAttribute('autostart', true);
+            node.setAttribute('hidden', true);
+            document.body.appendChild(node);
+        }
+        else {
+            node.remove();
+            node.setAttribute('src', id);
+            node.setAttribute('id', 'bsound');
+            node.setAttribute('autostart', true);
+            node.setAttribute('hidden', true);
+            document.body.appendChild(node);
+        }
+    }
+</script>
+
+</head>
+
+<body>
+
+<a href="#"><b class="blog"></b></a>
+
+<div id="header">
+<div class="holder">
+
+<div class="navtop">
+
+
+<p class="logolink"><a href="#" id="swap" title="ECTOMACHINE"></a></p>
+
+<div class="suckertreemenu">
+<ul id="treemenu1">
+
+<li><a href="#" title="Home"><img src="./index_files/nav_home.png" alt="home" class="home"></a></li>
+<li><a href="#" title="Music"><img src="./index_files/nav_music.png" alt="music"></a></li>
+<li><a href="#" title="Photo"><img src="./index_files/nav_photo.png" alt="photo"></a></li>
+<li><a href="#" title="Blog"><img src="./index_files/nav_blogs.png" alt="blog"></a></li>
+</ul>
+
+</div>
+</div>
+
+<div class="mission">
+<h4></h4>
+<p>
+我们是来自清华大学计算机系的摇滚乐队。Splay组建于2013年6月的北京，得名于一个神奇的数据结构，也是我们对技术宅的音乐梦想寄予的期望。
+</p>
+<p>
+成立以来，Splay多次在学校学生节上进行演出。拥有若干原创曲目，也在2014年清华大学校歌赛上获得“最佳原创歌曲奖”。
+</p>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div id="container"> 
+
+
+<div id="main">
+
+<div>
+
+</div>
+
+
+
+
+<div id="services">
+<h3></h3>
+
+<div class="serviceblocks">
+
+<div class="block">
+<img alt="zrfan" src="./index_files/block_zrf.png">
+<p>
+吉他：<font color="white">周若凡</font>
+<br>
+班级：<font color="white">计15</font>
+<br>
+生日：<font color="white">04 / 23</font>
+<br>
+星座：<font color="white">金牛座</font>
+</p>
+</div>
+<div class="block">
+    <img alt="tim" src="./index_files/block_tim.png">
+        <p>
+        吉他：<font color="white">周昕宇</font>
+        <br>
+        班级：<font color="white">计13</font>
+        <br>
+        生日：<font color="white">00 / 00</font>
+        <br>
+        星座：<font color="white">xx座</font>
+        </p>
+</div>
+<div class="block">
+    <img alt="kimi" src="./index_files/block_kimi.png">
+        <p>
+        鼓手：<font color="white">杨植麟</font>
+        <br>
+        班级：<font color="white">计13</font>
+        <br>
+        生日：<font color="white">00 / 00</font>
+        <br>
+        星座：<font color="white">xx座</font>
+        </p>
+</div>
+<div class="block">
+    <img alt="xin" src="./index_files/block_xin.png">
+        <p>
+        键盘：<font color="white">黄 鑫</font>
+        <br>
+        班级：<font color="white">计13</font>
+        <br>
+        生日：<font color="white">00 / 00</font>
+        <br>
+        星座：<font color="white">xx座</font>
+        </p>
+
+</div>
+<div class="block">
+    <img alt="xch" src="./index_files/block_xch.png">
+        <p>
+        贝斯：<font color="white">徐持衡</font>
+        <br>
+        班级：<font color="white">计92</font>
+        <br>
+        生日：<font color="white">00 / 00</font>
+        <br>
+        星座：<font color="white">xx座</font>
+        </p>
+</div>
+<div class="block">
+    <img alt="zjy" src="./index_files/block_blank.png">
+        <p>
+        主唱：<font color="white">周建宇</font>
+        <br>
+        班级：<font color="white">计32</font>
+        <br>
+        生日：<font color="white">00 / 00</font>
+        <br>
+        星座：<font color="white">xx座</font>
+        </p>
+</div>
+<div class="block">
+    <img alt="czy" src="./index_files/block_blank.png">
+        <p>
+        主唱：<font color="white">陈志远</font>
+        <br>
+        班级：<font color="white">计84</font>
+        <br>
+        生日：<font color="white">00 / 00</font>
+        <br>
+        星座：<font color="white">xx座</font>
+        </p>
+</div>
+<div class="block">
+    <img alt="yz" src="./index_files/block_blank.png">
+        <p>
+        ？？：<font color="white">叶紫</font>
+        <br>
+        班级：<font color="white">计15</font>
+        <br>
+        生日：<font color="white">09 / 23</font>
+        <br>
+        星座：<font color="white">天枰座</font>
+        </p>
+</div>
+<div class="block">
+    <img alt="zwt" src="./index_files/block_blank.png">
+        <p>
+        (前)主唱：<font color="white">张慰天</font>
+        <br>
+        班级：<font color="white">计05</font>
+        <br>
+        生日：<font color="white">00 / 00</font>
+        <br>
+        星座：<font color="white">xx座</font>
+        </p>
+</div>
+<div class="block">
+    <img alt="ldw" src="./index_files/block_blank.png">
+        <p>
+        (前)主唱：<font color="white">李德旺</font>
+        <br>
+        班级：<font color="white">计22</font>
+        <br>
+        生日：<font color="white">00 / 00</font>
+        <br>
+        星座：<font color="white">xx座</font>
+        </p>
+</div>
+<div class="block">
+    <img alt="wjy" src="./index_files/block_blank.png">
+        <p>
+        (前)贝斯：<font color="white">王靖易</font>
+        <br>
+        班级：<font color="white">计83</font>
+        <br>
+        生日：<font color="white">00 / 00</font>
+        <br>
+        星座：<font color="white">xx座</font>
+        </p>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+
+<div><img src="index_files/images/hr.png"></div>
+
+
+<div class="quote">
+
+<h3></h3>
+<table border="0" width="500px">
+    <tr>
+        <td><h4>歌曲</h4></td>
+        <td><h4>时间</h4></td>
+        <td><h4>播放</h4></td>
+    </tr>
+    <tr>
+        <td><p>Bleeding 排练录音</p></td>
+        <td><p>2014/10</p></td>
+        <td><button onClick='playSound("music/bleeding.m4v")'>播放</button></td>
+    </tr>
+    <tr>
+        <td><p>Daydream midi</p></td>
+        <td><p>2014/09</p></td>
+        <td><button onClick='playSound("music/daydream.wav")'>播放</button></td>
+    </tr>
+    <tr>
+        <td><p>Bleeding midi</p></td>
+        <td><p>2014/05</p></td>
+        <td><button onClick='playSound("music/Bleeding-2014-05-09.wav")'>播放</button></td>
+    </tr>
+    <tr>
+        <td><p>1001夜 现场录音</p></td>
+        <td><p>2013/12</p></td>
+        <td><button onClick='playSound("music/1001live.m4a")'>播放</button></td>
+    </tr>
+    <tr>
+        <td><p>The Song of DDL(solo) midi</p></td>
+        <td><p>2013/11</p></td>
+        <td><button onClick='playSound("music/thesongofddl.mp3")'>播放</button></td>
+    </tr>
+</table>
+</div>
+
+
+
+<div class="news">
+<h3></h3>
+
+
+<div id="news">
+
+<div class="icon">
+<h5>Nov</h5>
+<b>1</b>
+</div>
+
+<div class="text">
+<h4>校歌赛原创组决赛</h4>
+<p>在清华大学第24届校歌赛原创组决赛的舞台上，Splay的"Bleeding"荣获“最佳原创歌曲奖”。</p>
+<a href="#"><img src="./index_files/button_readmore.png" alt="Read More"></a>
+</div>
+
+<div class="icon">
+<h5>May</h5>
+<b>16</b>
+</div>
+
+<div class="text">
+<h4>热能系学生节演出</h4>
+<p>Splay参演热能系学生节“为伊燃”开场节目。</p>
+<a href="#"><img src="./index_files/button_readmore.png" alt="Read More"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="push"></div> 
+</div> 
+
+<div id="footer"> 
+<div class="content">
+
+<div class="footerblocks">
+
+
+<div class="block">
+<div class="flickr">
+<div class="head"></div>
+
+
+<div class="flickline"></div>
+
+<div id="standards">
+
+<div class="top"></div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="block">
+<div class="blogs">
+<div class="head"></div>
+
+
+</div>
+</div>
+</body></html>

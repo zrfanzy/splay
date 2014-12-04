@@ -1,0 +1,643 @@
+
+/********************************************
+   HTML ELEMENTS
+********************************************/ 
+ 
+ 
+* { margin: 0; padding: 0px; outline: none;}
+ 
+html, body { 
+background: url(images/mainbg.jpg); 
+margin: 0;
+padding: 0px;
+}
+
+a:active, a:focus{outline: 0;}
+
+/* ----------HR-------------- */
+div .hr { height: 48px; background: url('images/hr.jpg') no-repeat; border: none; border: 0px;}
+hr { display: none}
+
+.line { border: none; border-bottom: 1px dashed #525252; height: 0px; margin-left: 10px; margin-bottom: 20px; width: 98%  }
+.clear { clear: both; }
+
+
+/* ----------BLOG PATCH-------------- */
+.blog { background: url(images/blog.png); width: 273px; height: 190px;; position: absolute; text-indent: -999em; right: 0; top: 0; display: block;}
+
+
+/* ----------CENTER OF THE LAYOUT-------------- */
+#container { 
+min-height: 100%; 
+height: auto !important; 
+height: 100%; 
+margin: 0 auto 0em; /* make sure this matches in the body footer DIV */
+width: 960px;
+}
+ 
+
+/* --------------LABELS & FORMS------------- */
+
+label {
+font: 11px Lucida Sans, sans-serif; 
+color: #fff;
+text-transform: uppercase;
+}
+
+#input { margin-bottom: 30px;}
+
+.form {
+font: 11px Lucida Sans, sans-serif; 
+color: #ff0365;
+border: none;
+background: url(images/formbg.gif);
+height: 36px;
+padding-top: 2px;
+width: 450px;
+}
+
+#input ul {
+margin:0;
+padding:0;
+list-style-type:none;
+background: url('images/form_left.gif') no-repeat top left;
+padding: 0px 0px 0px 7px;
+width: 460px;
+}
+
+#input li {background: url('images/form_right.gif') no-repeat center right;}
+
+textarea {
+width: 450px;
+height: 172px;
+font: 11px Lucida Sans, sans-serif; 
+color: #ff0365;
+border: none;
+background: url('images/textarea_bg.gif') repeat-x;
+padding: 6px 0px 0px;
+line-height: 20px;
+overflow: auto;
+}
+
+#textarea  ul {
+margin:0;
+padding:0;
+list-style-type:none;
+background: url('images/textarea_left.gif') no-repeat top left;
+padding: 0px 0px 0px 7px;
+width: 460px;
+}
+
+#textarea li { background: url('images/textarea_right.gif') no-repeat top right; }
+
+input[type="submit"] {width: 173px; height: 77px; display: block; clear: both; border: none; margin-top: 20px; background: url(images/button_submit.png) no-repeat top left; cursor: pointer;}
+ 
+
+/* --------------HOME HEADER---------------------------------------------------------- */
+#header { background: url(images/headbg.png) repeat-x; height: 462px;}
+#header .holder {margin: 0 auto; width: 960px; background: url(images/missionbg.jpg) no-repeat top right; height: 451px; padding-top: 12px; }
+#header .holder .navtop { height: 124px; background: url(images/headtopbg.gif) repeat-x bottom left; }
+#header .mission { width:491px; height: 200px; margin-top: 45px;}
+#header .mission h4 { background: url(images/missionhead.png) no-repeat; width: 491px; height: 99px; margin-bottom: 10px; }
+#header .mission p { font: 13px Lucida Sans, Helvetica, Arial, Sans-Serif; line-height: 2.0em; color: #fafaf7; text-align: justify}
+
+
+/* --------------SUB HEADER---------------------------------------------------------- */
+#subheader { background: url(images/subheadbg.png) repeat-x; height: 184px;}
+#subheader .holder {margin: 0 auto; width: 960px; height: 184px; padding-top: 12px; }
+#subheader .holder .navtop { height: 124px; background: url(images/headtopbg.gif) repeat-x bottom left; }
+
+
+/* --------------TOPNAV------------------------------------------------------------- */
+.suckertreemenu {
+height: 39px;
+float: left; 
+width: 700px;
+height: 27px; 
+margin-top: 84px;
+}
+
+.suckertreemenu img { border: none; margin-left: 68px; }
+
+.suckertreemenu ul{
+margin: 0;
+padding-left: 0px;
+list-style-type: none;
+letter-spacing: 0px;
+}
+
+/*Top level list items*/
+.suckertreemenu ul li{ position: relative; display: inline; float: left;  }
+
+/*Top level menu link items style*/
+.suckertreemenu ul li a{
+display: inline;
+font: 10pt Tahoma, Arial, Verdana, Sans-serif;
+color: #fafaf7;
+text-decoration: none;
+}
+
+/*1st sub level menu*/
+.suckertreemenu ul li ul{
+left: 78px;
+position: absolute;
+top: 0em; /* no need to change, as true value set by script */
+display: block;
+visibility: hidden;
+margin-top: -6px;
+border-left: 1px solid #222;
+border-right: 1px solid #222;
+border-bottom: 1px solid #222;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.suckertreemenu ul li ul li{
+display: list-item;
+float: none;
+padding: 0px 0px 0px 8px;
+background: url(images/navbg.gif) repeat-x;
+width: 150px;
+}
+
+/*All subsequent sub menu levels offset after 1st level sub menu */
+.suckertreemenu ul li ul li ul{ 
+left: 159px; /* no need to change, as true value set by script */
+top: 0;
+}
+
+/* Sub level menu links style */
+.suckertreemenu ul li ul li a {
+margin: 0px;
+display: block;
+overflow: visible;
+text-align: left;
+font-family: Lucida Sans, sans-serif;
+font-size: 10px;
+text-transform: uppercase;
+color: #fff;
+text-decoration: none;
+background: url(images/icon_arrow.gif) no-repeat left center;
+padding: 10px 0px 9px 15px
+}
+
+.suckertreemenu ul li a:hover { color: #fafaf7;}
+.suckertreemenu ul li ul li a:hover { text-decoration:underline;  }
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows suckertree menu, add 1em top spacing between the two in IE*/
+padding-top: 1em;
+}
+	
+/* Holly Hack for IE \*/
+* html .suckertreemenu ul li { float: left; height: 1%; }
+* html .suckertreemenu ul li a { height: 1%; }
+/* End */
+
+
+/* --------------LOGO IN HEADER *always use this*------------- */
+.logolink, #swap {
+background-image: url('images/logo.png');
+background-repeat: no-repeat;
+width: 143px;
+height: 114px;
+float: left
+}
+ 
+.logolink a { float: left;  }
+ 
+.rollover { display: block; } /* Allow setting widths and heights */
+.rollover img { width: 100%; height: 100%; border: 0; } /* only set width and height once */
+.rollover:hover { visibility: visible; /* for IE */ } /* sets any property for the :hover state */
+.rollover:hover img { visibility: hidden; } /* 'rolls over' the image */
+
+/* --------------PAGE HEADERS------------- */
+#main .sub h3 { width: 431px; height: 60px;  }
+#main .sub h3.webdesign {background: url(images/head_webdesign.png) no-repeat; margin-bottom: 20px;}
+#main .sub h3.identity {background: url(images/head_identity.png) no-repeat; margin-bottom: 20px;}
+#main .sub h3.printdesign {background: url(images/head_print.png) no-repeat; margin-bottom: 20px;}
+#main .sub h3.about {background: url(images/head_about.png) no-repeat;}
+#main .sub h3.newstop {background: url(images/head_recentnews.png) no-repeat; margin-bottom: 20px;}
+#main .sub h3.contact {background: url(images/head_contact.png) no-repeat; margin-bottom: 20px;}
+
+
+/* --------------HOME SERVICES------------- */
+#services { margin-top: 14px; height: 100%; min-height: 100%; height: auto; text-align: center}
+#services h3 {  background: url(images/head_member.jpg) no-repeat; width: 245px; height: 42px; }
+
+/* --------------SERVICES BLOCKS----------------*/
+#services .serviceblocks {
+padding: 11px 0px 0px 0px;
+font: 10px Lucida Sans, Helvetica, Arial, Sans-Serif;
+color: #61584d;
+height: 100%;
+height: auto;
+min-height: 100%;
+width: 960px;
+line-height: 18px;
+}
+
+#services .serviceblocks a {
+color: #ee4591;
+font-weight: bold;
+background: url(/images/bullet.gif) no-repeat center left; 
+text-decoration: none;
+text-transform:lowercase
+}
+
+#services .serviceblocks a:hover { text-decoration: none}
+
+#services .serviceblocks p {
+padding: 0px 15px 10px 15px;
+font-family: Lucida Sans, sans-serif;
+font-size: 11px;
+font-style: normal;
+font-weight: normal;
+line-height: 1.7em;
+color: #8f9e9b;
+text-align: justify
+}
+
+#services .serviceblocks img { padding: 20px 0px 2px 0px; border: none;}
+#services .serviceblocks .block { float: left; width: 160px; margin: 0px; padding: 0px; clear:right }
+
+/* --------------NEWS HOME------------- */
+#main .news { padding-top: 10px; margin-left: 562px;}
+#main .news h3 { background: url(images/head_news.png) no-repeat; width: 300px; height: 60px; margin-bottom: 20px }
+
+#news { padding: 0px; margin: 0px; height: 100%; height: auto; min-height: 114px; clear: right}
+#news .icon { float: left; width: 126px; height: 114px; background: url(images/news_icon.png) no-repeat top left; text-align: center; padding-left: 3px; }
+#news .icon h5 { color: red;  color: #1a1a1a; text-transform: uppercase; font-family: Lucida Sans, sans-serif; font-size: 10px; padding-top: 31px}
+#news .icon b {color:#3f5e63; font-family: Lucida Sans, sans-serif; font-size: 17px; font-weight: normal }
+#news .text { text-align: left; padding: 18px 0px 0px 20px; margin-left: 126px; }
+#news .text img { margin-bottom: 10px; border: none;}
+
+#news .text h4 {
+font-size: 13px;
+font-family: Lucida Sans, sans-serif;
+text-transform: uppercase;
+color: #fafaf7;
+padding-bottom: 4px;
+}
+
+#news .text p { padding-bottom: 0px; clear:right; margin-bottom: 13px;
+font-family: Lucida Sans, sans-serif;
+font-size: 11px;
+font-style: normal;
+font-weight: normal;
+line-height: 1.7em;
+color: #8f9e9b;
+text-align: justify}
+
+/* --------------QUOTE HOME------------- */
+#main .quote { float:left; width: 562px; margin-top: 10px; padding: 0px;}
+#main .quote h3 { background: url(images/head_quote.png) no-repeat; width: 431px; height: 60px; margin-bottom: 20px }
+
+#main .quote h4 {
+font-size: 13px;
+font-family: Lucida Sans, sans-serif;
+text-transform: uppercase;
+color: #fafaf7;
+padding-bottom: 4px;
+}
+
+#main .quote p {
+padding-right: 50px;
+font-family: Lucida Sans, sans-serif;
+font-size: 11px;
+font-style: normal;
+font-weight: normal;
+line-height: 1.7em;
+color: #8f9e9b;
+text-align: justify
+}
+
+#quoteswap {background: url(images/button_getquote_on.png);  width: 173px;  height: 85px; }
+ 
+/* --------------MAIN------------- */
+#main {
+min-height: 100%; 
+height: auto !important; 
+height: 100%; 
+}
+ 
+
+#main .content {
+padding: 0px;
+margin-left: 200px;
+margin-right: 0px;
+}
+
+/* --------------SUBPAGES------------- */
+ #main .sub { margin-top: 20px;  padding: 0px; }
+
+#main .sub p {
+padding: 0px 10px 20px 10px;
+font-family: Lucida Sans, sans-serif;
+font-size: 11px;
+font-style: normal;
+font-weight: normal;
+line-height: 1.5em;
+color: #8f9e9b;
+}
+
+#main .sub p a { color: #ff0365;  }
+#main .sub p a:hover { color: white;}
+
+#main .sub h4 { color:white; padding-left: 10px; font: bold 18px Arial, Helvetica, sans-serif; font-style: normal; text-transform:uppercase; margin-bottom: 8px }
+
+
+/* --------------IDENTITY / WEB / PRINT------------- */
+#main .sub .id, .web, .print { background: url(images/idbg.gif); border: 1px solid #262626; padding: 10px; min-height: 312px; margin-bottom: 20px; }
+
+#main .sub .idleft, .webleft, .printleft { float:left; width: 696px; margin: 0px;}
+#main .sub .idcontent, .webcontent, .printcontent { padding: 0px; margin-left: 710px; margin-top: 10px;  }
+
+#main .sub .id h5, .web h5, .print h5 { 
+padding-left: 19px; 
+font: bold 18px Arial, Helvetica, sans-serif; 
+font-style: normal; 
+text-transform:uppercase; 
+color:white; 
+margin: 0px 0px 2px 10px; 
+background: url(images/icon_plus.gif) no-repeat top left 
+}
+
+#main .sub .id p img, .web p img, .print p img { padding-right: 6px;}
+#idholder, #webholder, #printholder { background-color: white; padding: 8px; }
+
+#main .sub .web .visitsite { text-transform: uppercase; font-weight: bold}
+
+/* --------------CREATED WITH ICONS------------- */
+.created {height: 20px;}
+
+
+/* --------------CREATED WITH ICONS------------- */
+
+.idnext { background: url(images/idbg.gif); border: 1px solid #262626; padding: 10px; }
+.idnext a { color: white; }
+.idnext .next { float: right }
+.idnext .prev { float: left }
+
+/* --------------ABOUT US / RECENT NEWS------------- */
+#main .sub .about, .recentnews, .contact { margin-top: 20px;}
+#main .sub .aboutleft, .recentnewsleft { float:left; width: 290px; margin: 0px;}
+
+#main .sub .aboutcontent, .recentnewscontent {
+padding: 0px;
+margin-left: 310px;
+margin-top: 10px;
+}
+
+#main .sub .about ul, .recentnews ul {
+padding: 20px 0px 20px 20px;
+margin-bottom: 20px;
+background: url(images/serviceboxbg.gif) repeat-y;
+border: 1px solid #262626;
+}
+
+#main .sub .about h5, .recentnews h5 {
+font: bold 13px Lucida Sans, sans-serif; font-style: normal; text-transform:uppercase; color:white; margin-bottom: 16px;
+}
+
+#main .sub .about ul li  {
+list-style-type: none;
+color: white;
+font: 10px Lucida Sans, sans-serif; font-style: italic; line-height: 2.2em;
+background: url(images/icon_x3.gif) no-repeat left top;
+padding-left: 28px;
+}
+
+
+/* -----------------------------CYCLE----------------------------- */
+.print a  {
+font: bold 14px Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+position: absolute;
+margin: 88px 0px 0px 710px;
+cursor: pointer;
+}
+
+.print img {border: none; cursor: pointer;}
+
+#prev, #prev2, #prev3, #prev4, #prev5 { color: red; }
+#next, #next2, #next3, #next4, #next5 {padding-left: 75px; color: black}
+
+
+
+/* -----------------------------CONTACT US----------------------------- */
+.contactcontent { padding: 0px; margin-left: 480px; margin-top: 10px;}
+.contactcontent img { border: none;}
+.contactleft { float:left; width: 445px; margin: 0px; }
+.contactleft img { border: 8px solid white; margin-bottom: 18px;}
+
+
+.name { height: 29px; background: url(images/label_name.gif) no-repeat; }
+.email { height: 29px; background: url(images/label_email.gif) no-repeat; }
+.message { height: 29px; background: url(images/label_message.gif) no-repeat; width: 181px; }
+
+
+.contactleft .heads { 
+padding-left: 19px; 
+font: bold 13px Lucida Sans, sans-serif; 
+font-style: normal; 
+text-transform:uppercase; 
+color:white; 
+background: url(images/icon_plus.gif) no-repeat top left;
+margin-left:10px;
+}
+
+.contactleft p {margin-top: 8px }
+
+/* --------------RECENT NEWS------------- */
+.recentnews li { color: white; display: block; border-top: 1px dashed #525252;  padding: 10px 0px 10px 0px; margin-right: 20px; font: 11px Lucida Sans, sans-serif; line-height: 1.7em;}
+.recentnews li a { color: #ff0065; text-transform: uppercase; font: bold 11px Lucida Sans, sans-serif; line-height: 2em; padding: 10px 10px 10px 0px;}
+.recentnews li a:hover { color: white; }
+.recentnews h6  { color: #ff0065; text-transform: uppercase; font-size: 9px; font-style: italic; font-weight: normal }
+
+
+/* --------------NEWS POST------------- */
+h7.title { color:white; padding-left: 10px; font: bold 18px Arial, Helvetica, sans-serif; font-style: normal; text-transform:uppercase;  }
+
+.recentnewscontent b { color: #ff0065; text-transform: uppercase; font: 11px Lucida Sans, sans-serif; line-height: 2em; padding-left: 10px; margin-top: -8px;}
+.recentnewscontent .read {background: url(images/idbg.gif); border: 1px solid #262626; padding: 10px; }
+
+.recentnewscontent a, .idnext a { color: white; font: bold 17px Lucida Sans, sans-serif; font-style: normal; text-transform:uppercase; }
+.recentnewscontent a.next { float:right }
+.recentnewscontent img { border: none;  }
+
+.recentnewscontent a.list { line-height: 1.7em; text-transform: none; font-size: 10px; font-weight: bold;}
+
+/* --------------FOOTER------------- */
+#footer, .push { 
+width: 100%;
+height: 0em; /* make sure this matches in the body container DIV */
+clear: both;
+bottom: 0;
+left: 0;
+}
+ 
+#footer {
+background: url(images/footerbg.png) repeat-x;
+height: 495px;
+height: auto;
+margin-top: 25px
+}
+ 
+#footer .content { 
+width: 960px; 
+margin: 0 auto; 
+position: relative; 
+height: 480px;
+background: url(images/footerpins.png) no-repeat top center;
+}
+
+#footer img { border: none; }
+
+
+
+/* --------------FOOTER BLOCKS------------- */
+
+#footer .footerblocks {
+padding: 11px 0px 0px 0px;
+font: 10px Lucida Sans, Helvetica, Arial, Sans-Serif;
+color: #61584d;
+width: 960px;
+line-height: 18px;
+}
+
+
+#footer .footerblocks a {
+color: #ee4591;
+font-weight: bold;
+background: url(/images/bullet.gif) no-repeat center left; 
+text-decoration: none;
+text-transform:lowercase
+}
+
+#footer .footerblocks a:hover { text-decoration: none}
+
+#footer .footerblocks p {
+padding: 0px 0px 0px 0px;
+font-family: Lucida Sans, sans-serif;
+font-size: 11px;
+font-style: normal;
+font-weight: normal;
+line-height: 1.7em;
+color: #8f9e9b;
+text-align: justify
+}
+
+
+#footer .footerblocks .block { float: left; width: 305px; margin: 0px; margin: 44px 5px 0px 5px; clear:right;  }
+
+
+/* --------------FOOTER FLICKR------------- */
+#footer .flickr, #footer .blogs, #footer .lastfm { padding: 0px; margin: 0px;}
+#footer .flickr .head { background: url(images/footer_flickr.gif) no-repeat; height: 17px; width: 83px; margin-bottom: 14px; }
+#imgholder { width: 98%}
+#imgholder img { border: 5px solid white; margin: 0px 10px 18px 0px;}
+#footer .flickline {background: url(images/footer_flickline.png) no-repeat; height: 7px}
+
+#footer .flickr a:hover img {border: 5px solid #FF0065}
+
+#footer .flickr a:hover img.view, #footer #standards ul li a:hover img {border: none }
+
+/* --------------FOOTER STANDARDS------------- */
+#footer #standards { margin-top: 17px; margin-bottom: 17px; padding: 0px; }
+#footer #standards .top { background:url(images/footer_standards.gif) no-repeat; height: 19px;  }
+#footer ul {margin: 0px; padding: 0px;}
+#footer li { display: inline; list-style-type: none; }
+
+
+/* --------------FOOTER RECENT BLOGS------------- */
+#footer .blogs .head { background: url(images/footer_blogs.png) no-repeat; width: 181px; height: 17px; margin-bottom: 14px; }
+#footer .blogs .post, #footer .blogs .postlast { width: 320px; border-top: 1px dashed #525252; padding: 10px 0px 10px 0px }
+#footer .blogs .postlast { border-bottom: 1px dashed #525252; }
+
+
+#footer a.toplink { 
+text-transform: uppercase; 
+font-size: 11px;
+font-family: Lucida Sans, sans-serif;
+color: #ff0065;
+text-decoration: underline;
+font-style: normal;
+}
+
+#footer .blogs p { margin-top: 8px;}
+#footer a.toplink:hover {text-decoration: underline;}
+#footer a.toplink:hover, #footer .blogs p { color: white;}
+
+#footer .blogs .post .link, #footer .blogs .postlast .link  { 
+color: #ff0065; 
+text-transform: uppercase; 
+margin-top: 10px; 
+font-size: 9px; 
+font-style: italic; }
+
+
+ #footer .blogs a.botlink { font-style:italic; text-decoration: underline; color: #ff0065; text-transform:uppercase} 
+
+/* --------------FOOTER TWITTER------------- */
+
+#footer .twitter {width: 284px; margin-left: 50px; font-family: Lucida Sans, sans-serif; font-size: 11px; line-height: 1.7em }
+#footer .twitter .head { background: url(images/footer_twitter.png) no-repeat;  width: 131px; height: 17px; margin-bottom: 14px; }
+#footer .twitter ul { margin: 0px; padding: 0px; }
+#footer .twitter li { color: white; display: block; border-top: 1px dashed #525252;  padding: 10px 0px 10px 0px  }
+#footer .twitter li a { color: #ff0065; text-transform: uppercase; font-size: 10px; font-weight: normal }
+#footer .twitter #twitter-link { height: 63px;}
+#twitter_update_list li a { display:block; text-align:left;}
+#twitter_update_list li span a {display:inline;}
+
+ a.c2 {display:block;}
+ h2.c1 {display: none;}
+
+
+
+/* ----------FOOTER SOCIAL------------*/
+#icons {margin: 4px 0px 0px 50px; padding: 0; width: 284px;}
+ul#social { height:44px;list-style:none outside none; margin-bottom: 18px}
+ul#social li { display:inline;}
+ul#social li a { float:left; height:44px; text-indent:-9999px;}
+ 
+ul#social li#twitter a {background:url("images/footer_social.png") no-repeat 0 0 transparent; width: 46px;}
+ul#social li#twitter a:hover {background:url("images/footer_social.png") no-repeat 0 -44px transparent; width: 46px;}
+
+ul#social li#facebook a {background:url("images/footer_social.png") no-repeat -46px 0px transparent; width: 48px;}
+ul#social li#facebook a:hover {background:url("images/footer_social.png") no-repeat -46px -44px transparent; width: 48px;}
+
+ul#social li#dribbble a {background:url("images/footer_social.png") no-repeat -94px 0px transparent; width: 49px;}
+ul#social li#dribbble a:hover {background:url("images/footer_social.png") no-repeat -94px -44px transparent; width: 49px;}
+
+ul#social li#forrst a {background:url("images/footer_social.png") no-repeat -143px 0px transparent; width: 48px;}
+ul#social li#forrst a:hover {background:url("images/footer_social.png") no-repeat -143px -44px transparent; width: 48px;}
+
+ul#social li#flickr a {background:url("images/footer_social.png") no-repeat -191px 0px transparent; width: 48px;}
+ul#social li#flickr a:hover {background:url("images/footer_social.png") no-repeat -191px -44px transparent; width: 48px;}
+
+ul#social li#rss a {background:url("images/footer_social.png") no-repeat -239px 0px transparent; width: 45px;}
+ul#social li#rss a:hover {background:url("images/footer_social.png") no-repeat -239px -44px transparent; width: 45px;}
+/* ----------/FOOTER SOCIAL------------*/
+
+
+
+/* --------------FOOTER RSS BUTTON------------- */
+.rss, .dribbble { margin-top: 4px; margin-bottom: 10px }
+.dribbble { margin-bottom: 0px }
+
+
+ .pics {  
+    width:  680px; 
+    height: 296px; 
+    padding: 0;  
+    margin:  0;  
+} 
+ 
+.pics img {  
+    width:  680px; 
+    height: 296px; 
+    top:  0; 
+    left: 0 
+} 
+ 
+ 
+ 

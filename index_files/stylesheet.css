@@ -1,0 +1,71 @@
+div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
+
+div.wpcf7-response-output {
+	position: relative;
+	float: left;
+}
+
+div.wpcf7-mail-sent-ok {
+	position: relative;
+	text-transform: uppercase; 
+	font: 10px Lucida Sans, Helvetica, Arial, Sans-Serif;
+	color: #fff;
+	margin: 5px 0px;
+	float: left;
+}
+
+div.wpcf7-mail-sent-ng {
+	position: relative;
+	text-transform: uppercase; 
+	font: 10px Lucida Sans, Helvetica, Arial, Sans-Serif;
+	color: #ff0065;
+	margin: 5px 0px;
+	float: left;
+}
+
+div.wpcf7-spam-blocked {
+	position: relative;
+	text-transform: uppercase; 
+	font: 10px Lucida Sans, Helvetica, Arial, Sans-Serif;
+	color: #ff0065;
+	margin: 5px 0px;
+	float: left;
+}
+
+div.wpcf7-validation-errors {
+	position: relative;
+	text-transform: uppercase; 
+	font: 10px Lucida Sans, Helvetica, Arial, Sans-Serif;
+	color: #ff0065;
+	margin: 5px 0px;
+	float: left;
+}
+
+span.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+	position: relative;
+	text-transform: uppercase; 
+	font: 10px Lucida Sans, Helvetica, Arial, Sans-Serif;
+	color: #ff0065;
+	margin: 5px 0px;
+	float: left;
+}
+
+span.wpcf7-not-valid-tip-no-ajax {
+	position: relative;
+	text-transform: uppercase; 
+	font: 10px Lucida Sans, Helvetica, Arial, Sans-Serif;
+	color: #ff0065;
+	margin: 5px 0px;
+	float: left;
+}
+
+span.wpcf7-list-item {
+	margin-left: 0.5em;
+}
