@@ -1,311 +1,1549 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+    <head>
+        <title>Splay's Homepage </title>
+        <style>
+            body{
+                font:15px "Times New Roman", Times, serif;
+            }
+        </style>
+    </head>
+    <body>
+        <p><img height=280 src="Jie-0.jpg" align=left hspace=6 style='margin-left:-6p margin-right:6px'></p>
+            <p style="vertical-align:top;" id="#top">
+            &nbsp;&nbsp;&nbsp; <b><font size=5>Splay</font></b></p>
+            <p> <i>A band from the department of Computer Science of Tsinghua University.</i></p>
+            <p>
+            Department of Computer Science and Technology<br>
+            Tsinghua University</p>
+            
+            <br><b>Office:</b>&nbsp;
+            Zijing Building, Tsinghua University, Beijing, 100084.
+            China PR.
+            
+            <br><b>Vocal: </b>Jianyu Zhou, Dewang Li, Zhiyuan Chen
+            
+            <br><b>Guitar: </b>&nbsp; Xinyu Zhou,Ruofan Zhou
+            <br><b>Drum: </b>&nbsp; Zhilin Yang
+            <br><b>Keyboard: </b>&nbsp; Xin Huang
+            <br><b>Bass: </b>&nbsp; Chiheng Xu
+            <br><b>Mascot: </b>&nbsp; Zi Ye
+            <br><b>Former member: </b>&nbsp; Weitian Zhang, Jingyi Wang
 
-
-<title>
-	Splay</title>
-
-<link rel="stylesheet" id="contact-form-7-css" href="./index_files/stylesheet.css" type="text/css" media="all">
-<script type="text/javascript" src="./index_files/jquery.js"></script>
-
-
-<link rel="stylesheet" href="./index_files/style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="./index_files/slide.css" type="text/css" media="screen">
-
-
-<script language="javascript" type="text/javascript" src="./index_files/navbar.js"></script>
-<script>
-    function playSound(id)
-    {
-        var node=document.getElementById('bsound');
-        if (node == null) {
-            node =  document.createElement("embed");
-            node.setAttribute('src', id);
-            node.setAttribute('id', 'bsound');
-            node.setAttribute('autostart', true);
-            node.setAttribute('hidden', true);
-            document.body.appendChild(node);
-        }
-        else {
-            node.remove();
-            node.setAttribute('src', id);
-            node.setAttribute('id', 'bsound');
-            node.setAttribute('autostart', true);
-            node.setAttribute('hidden', true);
-            document.body.appendChild(node);
-        }
-    }
-</script>
-
-</head>
-
-<body>
-
-<a href="#"><b class="blog"></b></a>
-
-<div id="header">
-<div class="holder">
-
-<div class="navtop">
-
-
-<p class="logolink"><a href="#" id="swap" title="ECTOMACHINE"></a></p>
-
-<div class="suckertreemenu">
-<ul id="treemenu1">
-
-<li><a href="#" title="Home"><img src="./index_files/nav_home.png" alt="home" class="home"></a></li>
-<li><a href="#" title="Music"><img src="./index_files/nav_music.png" alt="music"></a></li>
-<li><a href="#" title="Photo"><img src="./index_files/nav_photo.png" alt="photo"></a></li>
-<li><a href="#" title="Blog"><img src="./index_files/nav_blogs.png" alt="blog"></a></li>
-</ul>
-
-</div>
-</div>
-
-<div class="mission">
-<h4></h4>
-<p>
-我们是来自清华大学计算机系的摇滚乐队。Splay组建于2013年6月的北京，得名于一个神奇的数据结构，也是我们对技术宅的音乐梦想寄予的期望。
-</p>
-<p>
-成立以来，Splay多次在学校学生节上进行演出。拥有若干原创曲目，也在2014年清华大学校歌赛上获得“最佳原创歌曲奖”。
-</p>
-
-</div>
-
-</div>
-</div>
-
-
-
-
-
-<div id="container"> 
-
-
-<div id="main">
-
-<div>
-
-</div>
-
-
-
-
-<div id="services">
-<h3></h3>
-
-<div class="serviceblocks">
-
-<div class="block">
-<img alt="zrfan" src="./index_files/block_zrf.png">
-<p>
-<font color="white">Fanzy周若凡</font>
-<br>
-团长、节奏吉他<br>
-班级：计15<br>
-副业是做设计
-</p>
-</div>
-<div class="block">
-    <img alt="tim" src="./index_files/block_tim.png">
-        <p>
-        <font color="white">Tim周昕宇</font>
-        <br>
-        音乐总监、主音吉他<br>
-        班级：计13<br>
-        两种键盘都很会敲
-</p>
-</div>
-<div class="block">
-    <img alt="kimi" src="./index_files/block_kimi.png">
-        <p>
-        <font color="white">Kimi杨植麟</font>
-        <br>
-        联合创始人、歌手<br>
-        班级：计13<br>
-        学分绩第一、paper无数
-</div>
-<div class="block">
-    <img alt="xin" src="./index_files/block_xin.png">
-        <p>
-        <font color="white">"鑫爷"黄鑫</font>
-        <br>
-        键盘手<br>
-        班级：计13<br>
-        深藏不露的创业精神
-</div>
-<div class="block">
-    <img alt="xch" src="./index_files/block_xch.png">
-        <p>
-        <font color="white">徐持衡</font>
-        <br>
-        贝斯手<br>
-        班级：计92<br>
-        Sensetime联合创始人
-</div>
-<div class="block">
-    <img alt="zjy" src="./index_files/block_zjy.png">
-        <p>
-        <font color="white">周建宇</font>
-        <br>
-        主唱<br>
-        班级：计32<br>
-        男高音特长生
-</div>
-<div class="block">
-    <img alt="ldw" src="./index_files/block_ldw.png">
-        <p>
-        <font color="white">李德旺</font>
-        <br>
-        主唱<br>
-        班级：计22<br>
-        阿卡贝拉成员
-</div>
-<div class="block">
-    <img alt="czy" src="./index_files/block_czy.png">
-        <p>
-        <font color="white">陈志远</font>
-        <br>
-        主唱<br>
-        班级：计84<br>
-        校歌赛冠军、酒井歌神
-</div>
-<div class="block">
-    <img alt="yz" src="./index_files/block_ziv.png">
-        <p>
-        <font color="white">Ziv叶紫</font>
-        <br>
-        吉祥物<br>
-        班级：计15<br>
-        献花小使者
-</div>
-<div class="block">
-    <img alt="zwt" src="./index_files/block_shi.png">
-        <p>
-        <font color="white">“矢哥”张慰天</font>
-        <br>
-        首发主唱<br>
-        班级：计05<br>
-        系歌赛冠军
-</div>
-
-<div class="block">
-    <img alt="wjy" src="./index_files/block_void.png">
-        <p>
-        <font color="white">王靖易</font>
-        <br>
-        首发贝斯手<br>
-        班级：计83<br>
-        
-</div>
-</div>
-<div class="clear"></div>
-</div>
-
-<div><img src="index_files/images/hr.png"></div>
-
-
-<div class="quote">
-
-<h3></h3>
-<table border="0" width="500px">
-    <tr>
-        <td><h4>歌曲</h4></td>
-        <td><h4>时间</h4></td>
-        <td><h4>播放</h4></td>
-    </tr>
-    <tr>
-        <td><p>“酒是这Young”学生节表演 现场录音</p></td>
-        <td><p>2014/12</p></td>
-        <td><button onClick='playSound("music/thisisit.m4a")'>play</button></td>
-    </tr>
-    <tr>
-        <td><p>YOUNG(酒是这Young主题曲) EP</p></td>
-        <td><p>2014/12</p></td>
-        <td><button onClick='playSound("music/YOUNG.mp3")'>play</button></td>
-    </tr>
-    <tr>
-        <td><p>Bleeding(原创歌曲) 排练录音(周建宇 and 李德旺)</p></td>
-        <td><p>2014/10</p></td>
-        <td><button onClick='playSound("music/bleeding.m4v")'>play</button></td>
-    </tr>
-    <tr>
-        <td><p>Daydream(原创歌曲) midi</p></td>
-        <td><p>2014/09</p></td>
-        <td><button onClick='playSound("music/daydream.wav")'>play</button></td>
-    </tr>
-    <tr>
-        <td><p>Bleeding(原创歌曲) 排练录音(张慰天)</p></td>
-        <td><p>2014/05</p></td>
-        <td><button onClick='playSound("music/bleeding.m4a")'>play</button></td>
-    </tr>
-    <tr>
-        <td><p>The Song of DDL(原创solo) 1001夜现场</p></td>
-        <td><p>2013/12</p></td>
-        <td><button onClick='playSound("music/DDL_1001.mp3")'>play</button></td>
-    </tr>
-    <tr>
-        <td><p>“1001夜”学生节表演 现场录音</p></td>
-        <td><p>2013/12</p></td>
-        <td><button onClick='playSound("music/1001live.m4a")'>play</button></td>
-    </tr>
-    <tr>
-        <td><p>The Song of DDL(原创solo) midi</p></td>
-        <td><p>2013/11</p></td>
-        <td><button onClick='playSound("music/thesongofddl.mp3")'>play</button></td>
-    </tr>
-</table>
-</div>
-
-
-
-<div class="news">
-<h3></h3>
-
-
-<div id="news">
+            </p>
+            
+            <hr>
+            <div align="center">
+                <!-- <a href="#social">Social Graph</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <a href="#activities">Members</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#research">Live</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="publication_list.html">Origin Songs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#activities">Activities</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#system">Photos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#awards">Awards</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <hr>
+            
+            <p>我们是来自<a href="">清华大学计算机系</a>的摇滚乐队。Splay组建于2013年6月的北京，得名于一个神奇的数据结构，也是我们对技术宅的音乐梦想寄予的期望。
+            成立以来，Splay多次在学校学生节上进行演出。拥有若干原创曲目，也在2014年<a href="">清华大学校歌赛</a>上获得“最佳原创歌曲奖”。
+            </p>
+            
+            <p><b><span style='color:red'>New * </span></b>
+            酒是这young主题曲 <b><i>Young</span></i>单曲以及MV已经发布</b>
+            [<a href="publications/2014-compoutational-model-sna.pptx">MP4 Download</a>]
+            [<a href="publications/2014-compoutational-model-sna.pdf">PDF Version</a>].
+            <br>
+            <p><b><span style='color:red'>New * </span></b>We are looking for <i>highly-motivated music lover</i> to work with us.
+            <br>
+            <b><span style='color:red'>New * </span></b>We also have a few open <i>Postdoctoral Positions</i> to investigate underlying theory and algorithms in data mining, social network analysis, and machine learning.
+            <br>
+            <b><span style='color:red'>New * </span></b>If you want me to write a recommendation letter for you, please first read <a href="recommendletter.html">this</a>.</p>
+            <p><b><span style='color:red'>New * </span></b> Arnetminer.org becomes a Sponsor of SIGKDD 2012, SIGKDD 2011, ICDM 2011, ECML/PKDD 2011, WSDM 2011, ICMLA 2011, ICTAI 2011.<br>
+            <b><span style='color:red'>New * </span></b> <a href="http://pminer.org">PatentMiner.org</a> is online. It is a general topic-driven framework for analyzing and
+            mining heterogeneous patent networks. Relevant papers have been published at <a href="http://kdd2012.sigkdd.org/">KDD'12</a>.<br>
+            
+            <b><span style='color:red'>New * </span></b> <b>Recipient</b> of <a href="http://www.ccf.org.cn/sites/ccf/ccfqn.jsp">2012 CCF Young Scientist Award</a>,
+            2012 NSFC Excellent Young Scholar,
+            2012 Best employee of DCST of Tsinghua University,
+            <a href="#2012kddbestposter">2012 SIGKDD Best Poster Award</a>,
+            <a href="#2012jcdlbestnomination">2012 JCDL Best Student Paper Nomination</a>,
+            
+            
+            </p>
+            
+            
+            <!--
+             <p id="social"><font size=4><b>MY ACADEMIC SOCIAL GRAPH</b></font>&nbsp;(<a href="http://arnetminer.org/viewperson.do?naid=1458619&keyword=jie%20tang">A COMPLETE PROFILE</a>)</p>
+             <p>
+             <script type="text/javascript">
+             document.write(unescape("%3Cscript src='http://arnetminer.org/js/arnet.js' type='text/javascript'%3E%3C/script%3E"));
+             </script>
+             <script type="text/javascript">
+             arnet_socialGraph("jie tang",900,650);
+             </script>
+             </p>
+             Generated by <a href="http://arnetminer.org">Arnetminer.org</a>.
+             <p>
+             To add such a social graph into your homepage, you can simply add the following scripts:
+             <div style="color:blue;margin-left:20px;">
+             &lt;script type="text/javascript"&gt; <br>
+             &nbsp;&nbsp;&nbsp;&nbsp;document.write(unescape("%3Cscript src='http://arnetminer.org/js/arnet.js' type='text/javascript'%3E%3C/script%3E"));<br>
+             &lt;/script&gt; <br>
+             &lt;script type="text/javascript"&gt; <br>
+             &nbsp;&nbsp;&nbsp;&nbsp;arnet_socialGraph("jie tang",900,650);<br>
+             &lt;/script&gt;
+             </div>
+             </p>
+             -->
+            
+            <br>
+            <p id="research"><font size=4><b>RECENT RESEARCH</b></font> &nbsp; <a href="#top">Go Top</a>
+            <br>
+            An overview of the recent research in our laboratory:
+            <a href="publications/Computational-models-for-Micro-level-SNA.pptx">Computational Models for Micro-level Social Network Analysis</a>
+            ([<a href="publications/Computational-models-for-Micro-level-SNA.pdf">PDF Version</a>])
+            </p>
+            
+            <table border="1" cellpadding="1" cellspacing="1" width="95%" style="margin-top: 0px; border:0px solid #006699;">
+                <tr bgcolor="darkblue">
+                    <th colspan="2" align="left"><font color="white">* Social Influence</font></th>
+                </tr>
+                <tr>
+                    <td width=320><img src="pics/influence.jpg" width=320 />
+                    </td>
+                    <td>Social influence occurs when one's opinions, emotions, or behaviors are affected by others, intentionally or unintentionally. There are three major research topics in social influence: test, measure, and model. <br>
+                        &nbsp;&nbsp;&nbsp;
+                        Our research mainly focuses on quantifying the influential strength between users in large social networks. We try to answer several challenging questions: (1) How to differentiate the social influences from different angles(topics)? (2) How to quantify the strength of those social influences? (3) How to estimate the model on real large networks? <br>
+                        &nbsp;&nbsp;&nbsp;
+                        We propose Topical Affinity Propagation (TAP) to model the topic-level social influence on large networks (<a href="publications/KDD09-Tang-et-al-Social-Influence-Analysis.pdf">Tang et al., KDD'09</a>) and investigate a new problem of conformity influence analysis (<a href="publications/KDD13-Tang-et-al-Conformity-Influence.pdf">Tang et al., KDD'13</a>).
+                        We also study the conservative and non-conservative influence propagation over heterogeneous networks (<a href="publications/DMKD12-Liu-Tang-et-al-Learning-Influence-from-Heterogeneous-Social-Networks.pdf">Liu et al., DMKD'12</a>) and propose the notion of social influence locality for modeling retweeting behaviors (<a href="publications/IJCAI13-Zhang-et-al-social-influence-locality.pdf">Zhang et al., IJCAI'13</a>).
+                        We further propose a NTT-FGM model to formalize social influence, correlation (homophily), and users' action dependency into a unified approach and distinguish their effects for modeling and predicting users' actions in social networks (<a href="publications/KDD10-Tan-et-al-social-action-tracking.pdf">Tan et al., KDD'10</a>). And apply social influence for analyzing user-level sentiment in social networks (<a href="publications/KDD11-Tan-et-al-social-user-sentiment-analysis.pdf">Tan et al., KDD'11</a>).<br>
+                        <br>
+                        <b>Related data sets and codes: </b>
+                        [<a href="http://arnetminer.org/lab-datasets/soinf/">Topic-Influence</a>]&nbsp;
+                        [<a href="http://arnetminer.org/heterinf/">Influence-over-Heterogeneous-Networks</a>]&nbsp;
+                        [<a href="http://arnetminer.org/stnt/">Social-Action-Tracking</a>]<br>
+                        <b>Tutorials</b> are given at <a href="http://www2014.org">WWW'14</a>, <a href="http://www.wsdm2013.org/">WSDM'13</a> and <a href="http://www.asonam2012.etu.edu.tr/">ASONAM'12</a>, and can be downloaded here
+                        [<a href="publications/WWW14-tutorial-social-influence-analysis.pptx">Slides</a>]
+                        [<a href="publications/WWW14-tutorial-social-influence-analysis.pdf">PDF</a>].<br>
+                        <b>A survey</b> of models and algorithms for social influence analysis can be found <a href="publications/social-influence-analysis.pdf">here</a>.
+                    </td>
+                </tr>
+                
+                <tr bgcolor="darkblue">
+                    <th colspan="2" align="left" ><font color="white">* Structural Holes & Information Diffusion</font></th>
+                        </tr>
+                        <tr>
+                        <td width=320><img src="pics/structural-hole.jpg" width=320 />
+                        </td>
+                        <td>The theory of <i>structural holes</i> suggests that
+                        individuals would benefit from filling the ``holes'' (called as structural hole spanners) between people or groups that are otherwise disconnected.<br>
+                        &nbsp;&nbsp;&nbsp;
+                        The fundamental challenge we want to address is to detect users who span structural holes in social networks and how the structural hole spanners influence the information diffusion? <br>
+                        &nbsp;&nbsp;&nbsp;
+                        We explore the problem of mining structural hole spanners through
+                        information diffusion in social networks (<a href="publications/WWW13-Lou&Tang-Structural-Hole-Information-Diffusion.pdf">Lou and Tang, WWW'13</a>). We
+                        precisely define the problem of mining top-k structural hole spanners in large-scale social networks and provide an objective (quality) function to formalize the problem. Two instantiation models (<b>HIS</b> and <b>MaxD</b>) have been developed to implement the objective function.
+                        The optimization is proved to be NP-hard, and we design an efficient algorithm with provable approximation guarantees.<br>
+                        &nbsp;&nbsp;&nbsp;
+                        <br>
+                        <b>Related data sets and codes: </b>
+                        [<a href="http://arnetminer.org/structural-hole">Structural hole&Information diffusion</a>]
+                            </td>
+                            </tr>
+                            
+                            <tr bgcolor="darkblue">
+                            <th colspan="2" align="left" ><font color="white">* Social Tie & Community</font></th>
+                            </tr>
+                            <tr>
+                            <td width=300><img src="pics/tie.jpg" width=320 />
+                            </td>
+                            <td>
+                            In online social networks, social relationship is the most basic unit to form the network structure. Relationships between users can be either directed or undirected.
+                            <br>
+                            &nbsp;&nbsp;&nbsp;
+                            We focus on studying two aspects of social tie: (1) to which extent the label of social ties between people can be inferred in social networks? (2) how reciprocal (two-way) relationships are developed from parasocial (one-way) relationships and how the relationships further develop into triadic closure and communities? (3) how communities dynamically evolve over time?
+                            <br>
+                            &nbsp;&nbsp;&nbsp;
+                            We propose a unsupervised dynamic factor graph model to infer advisor-advisee relationship from the coauthor network (<a href="publications/KDD10-Wang-et-al-Advisor-relationship-mining.pdf">Wang et al., KDD'10</a>) and a partially labeled factor graph model to infer the type of social relationships (<a href="publications/PKDD11-Tang-et-al-inferring-social-tie.pdf">Tang et al., ECML/PKDD'11</a>, <b>PKDD Best Student Paper Runnerup</b>).
+                            We further incoporate social theories (e.g., social balance theory, social status theory, structural hole theory, two-step flow theory, and strong/weak tie) into a triad-based factor graph model to infer the formation of reciprocal relationships from parasocial relationships (<a href="publications/CIKM11-John-Lou-Tang-Reciprocal-Relationship-Prediction.pdf">Hopcroft et al., CIKM'11</a>) and to
+                            infer the formation of triad closure (<a href="publications/TKDD12-Lou-Tang-et-al-Reciprocity-and-Triadic-Closure.pdf">Lou et al., TKDD'13</a>), and leverage features defined based on those social theories to  infer social ties across heterogeneous networks (<a href="publications/WSDM12-Tang-et-al-inferring-social-tie-across-heterogeneous-networks.pdf">Tang et al., WSDM'12</a>). We have further proposed a co-evolution model for modeling the dynamic changes of communities in social networks (<a href="#">Sun et al., TKDE'13</a>).
+                            <br>
+                            <br>
+                            
+                            <b>Related data sets and codes: </b>
+                            [<a href="http://arnetminer.org/socialtie">Social-Tie</a>]&nbsp;
+                            [<a href="http://arnetminer.org/reciprocity">Reciprocity&Triadic Closure</a>]<br>
+                                <b>Invited talks</b> were given at different venues and related slides can be downloaded here. [<a href="publications/2012-Jie-Tang-Social-tie-analysis.pdf">PDF</a>]
+                                </td>
+                                </tr>
+                                
+                                <tr bgcolor="darkblue">
+                                <th colspan="2" align="left" ><font color="white">* Factor Graph Models</font></th>
+                                </tr>
+                                <tr>
+                                <td width=300><img src="pics/plfg.jpg" width=300 />
+                                </td>
+                                <td>
+                                Factor graph is one type of probabilistic graphical models, providing an elegant way to represent both undirected graphical structure and directed graphical structure, with more emphasis on the factorization of the distribution.
+                                <br>
+                                &nbsp;&nbsp;&nbsp;
+                                Online social networks are getting larger and machine learning tasks are facing several challenges: (1) labeled data is insufficient and how to leverage the unlabeled data for learning a graphical model? (2) how to leverage the correlation and the network information to help build the graphical model?
+                                <br>
+                                &nbsp;&nbsp;&nbsp;
+                                We design two categories of factor graph models. The first category is for unsupervised learning. We have proposed Topical Factor Graph (TFG) (<a href="publications/KDD09-Tang-et-al-Social-Influence-Analysis.pdf">Tang et al., KDD'09</a>), Time-constrained Probabilistic Factor Graph model (TPFG) (<a href="publications/KDD10-Wang-et-al-Advisor-relationship-mining.pdf">Wang et al., KDD'10</a>). The second category is for supervised learning. We have proposed Partially Labeled Factor Graph model (PLFG) (<a href="publications/DMKD12-Zhuang-et-al-Actively-learning-to-infer-social-ties.pdf">Zhuang et al., DMKD'12</a>), Triad-based Factor Graph model (TriFG) (<a href="publications/TKDD12-Lou-Tang-et-al-Reciprocity-and-Triadic-Closure.pdf">Lou et al., TKDD'12</a>), Transfer-based Factor Graph model (TranFG) (<a href="publications/WSDM12-Tang-et-al-inferring-social-tie-across-heterogeneous-networks.pdf">Tang et al., WSDM'12</a>).
+                                <br>
+                                <br>
+                                <b>Related codes: </b>
+                                [<a href="software/OpenCRF_PartiallyLabeledFGM.rar">Partially Labeled Factor Graph</a> &nbsp;<a href="software/readme.txt">readme</a>. Refer to <a href="http://arnetminer.org/socialtie">Web page</a> or <a href="publications/PKDD11-Tang-et-al-inferring-social-tie.pdf">Tang et al. PKDD'11</a> for details.]<br>
+                                [<a href="software/Topic-Affinity-Propagation.zip">Topic Affinity Propagation</a>. Refer to <a href="http://arnetminer.org/lab-datasets/soinf/">Web Page</a> or <a href="publications/KDD09-Tang-et-al-Social-Influence-Analysis.pdf">Tang et al. KDD'09</a> for details.]
+                                </td>
+                                </tr>
+            </table>
+            
+            <br>
+            <b>Other Research Topics:</b> we are also applying the studied social network theories and data mining/machine learning algorithms to applications such as Social Recommendation (<a href="publications/KDD12-Tang-et-al-Cross-Domain-Collaboration-Recommendation.pdf">Tang et al., KDD'12</a>, <a href="publications/WSDM13-Wu-et-al-Patent-Partner-Recommendation.pdf">Wu et al., WSDM'13</a>, Cai et al., TKDE'13), Emotion Prediction (<a href="publications/TAC11-Tang-et-al-social-emotion-analysis.pdf">Tang et al., TAC'12</a>, <b>IEEE TAC spotlight paper</b>; <a href="publications/MM12-Jia-et-al-van-Gogh-mood.pdf">Jia et al., Multimedia'12</a>), Informatin Integration (<a href="publications/SIGMOD09-Zhong-et-al-unbalanced-ontology-matching.pdf">Zhong et al., SIGMOD'09</a>,
+            <a href="publications/WWW12-Wang-et-al-knowledge-linking.pdf">Wang et al., WWW'12</a>, <a href="publications/TKDE12-Tang-Name-Disambiguation.pdf">Tang et al., TKDE'12</a>,
+            <a href="publications/IJCAI13-Wang-et-al-knowledge_linking.pdf">Wang et al., IJCAI'13</a>), Social Context Summarization (<a href="publications/SIGIR11-Yang-et-al-social-context-summarization.pdf">Yang et al., SIGIR'11</a>),
+            Social Content Alignment
+            (<a href="publications/IJCAI13-Hou-et-al-social-content-alignment.pdf">Hou et al., IJCAI'13</a>).
+            
+            <br>
+            <br>
+            <b>Notable Systems:</b>
+            <ul>
+                <li>
+                    <a href="http://arnetminer.org"><b><i>ArnetMiner</b></i></a> is a free online service for academic social network analysis and mining. The system has collected information of over 1,000,000 researchers, 3,000,000 publication papers, and 8,000 conferences. The system is in operation on the internet since 2006 and has attracted nearly 4,320,000 independent IP accesses, with more than 300,000 page views per day. Users? visits cover more than 220 countries/regions. It provides various search/mining services for publishers such as Elsiver and conferences such as SIGKDD and WSDM. Representative publications: (<a href="publications/KDD08-Tang-et-al-ArnetMiner.pdf">Tang et al., KDD'08</a>; <a href="publications/TKDD11-Tang-et-al-web-user-profiling.pdf">Tang et al., TKDD'10</a>).
+                </li>
+                
+                <li>
+                    <a href="http://pminer.org"><b><i>PatentMiner</i></b></a> is an online service for analyzing and mining patent data. So far, the system collects and extracts a heterogeneous patent network consisting of nearly 4,000,000 patents, 2,000,000 inventors, and 400,000 companies. The system provides services such as expertise company/inventor/patent search, competitor discovery, company profiling, and patent search summarization. Representative publication (<a href="publications/KDD12-Tang-et-al-PatentMiner.pdf">Tang et al., KDD'12</a>).
+                </li>
+            </ul>
+            
+            
+            <!--
+             <table cellspacing="0" cellpadding="0" width="1000" style="margin-top: 5px; border:1px solid #006699;">
+             
+             <tr>
+             <td bgcolor="#006699" style="padding:5px 10px 5px 5px; border:1px solid #006699;"></td>
+             <td colspan="4" bgcolor="#006699" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><strong><span style="font-family: Arial; font-size: 2; color:#FFF">Social Network Analysis and Mining</span></strong></td>
+             </tr>
+             
+             <tr>
+             <td width="97" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial">
+             Social Influence Analysis</font></td>
+             <td colspan="4" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial">Morning Coffee & Snacks</font></td>
+             </tr>
+             
+             <tr>
+             <td width="97" rowspan="2" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial"></font></td>
+             <td colspan="4" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial">
+             Opening ceremony</font></td>
+             </tr>
+             <tr>
+             <td colspan="4" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial"><a href="#speaker1" style="text-decoration:none">Keynote Speech1 - Philip Yu (UIC), (FIT Auditorium)</a></font></td>
+             </tr>
+             <tr>
+             <td width="97" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial">10:30-11:00</font></td>
+             <td colspan="4" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial">Coffee Break & Group Photo</font></td>
+             </tr>
+             <tr>
+             <td width="97" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial">11:00-12:15</font></td>
+             <td colspan="4" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial"><a href="#speaker2" style="text-decoration:none">Keynote Speech2 - Wolfgang Nejdl (L3S, Germany),  (FIT Auditorium)</a></font></td>
+             </tr>
+             
+             <tr>
+             <td bgcolor="#aaaaaa"  width="97" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#000000" size="2" face="Arial">12:30-14:00</font></td>
+             <td colspan="4" bgcolor="#aaaaaa"  style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#000000" size="2" face="Arial">Lunch</font></td>
+             </tr>
+             <tr>
+             <td width="97" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial">14:00-15:30</font></td>
+             <td colspan="2" width="165" style="padding:5px 10px 5px 5px; border:1px solid #006699;">
+             <font color="#555555" size="2" face="Arial">
+             <a href="#S1A" style="text-decoration:none">Session 1A: Pattern Mining<br>(FIT 1-315)</a>
+             </font>
+             </td>
+             
+             <td colspan="1" width="165" style="padding:5px 10px 5px 5px; border:1px solid #006699;">
+             <font color="#555555" size="2" face="Arial">
+             <a href="#S1B" style="text-decoration:none">Session 1B: Social Computing<br>(FIT 1-312)</a>
+             </font>
+             </td>
+             <td colspan="1" style="padding:5px 10px 5px 5px; border:1px solid #006699;">
+             <font color="#555555" size="2" face="Arial">
+             <a href="#S1C" style="text-decoration:none">Session 1C: Advanced Applications<br>(FIT 1-415)</a>
+             </font>
+             </td>
+             </tr>
+             
+             
+             <tr>
+             <td width="97" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial">15:30-16:00</font></td>
+             <td colspan="4" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial">Coffee Break</font></td>
+             </tr>
+             
+             <tr>
+             <td width="97" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial">16:00-17:30</font></td>
+             
+             <td colspan="2" width="165" style="padding:5px 10px 5px 5px; border:1px solid #006699;">
+             <font color="#555555" size="2" face="Arial">
+             <a href="#S2A" style="text-decoration:none">Session 2A: Classification<br>(FIT 1-315)</a>
+             </font>
+             </td>
+             <td colspan="1" width="165" style="padding:5px 10px 5px 5px; border:1px solid #006699;">
+             <font color="#555555" size="2" face="Arial">
+             <a href="#S2B" style="text-decoration:none">Session 2B: Uncertain Data Mining<br>(FIT 1-312)</a>
+             </font>
+             </td>
+             <td colspan="1" style="padding:5px 10px 5px 5px; border:1px solid #006699;">
+             <font color="#555555" size="2" face="Arial">
+             <a href="#S2C" style="text-decoration:none">Session 2C: Topic and Opinion Mining<br>(FIT 1-415)</a>                      		</font>
+             </td>
+             </tr>
+             
+             
+             <tr>
+             <td width="97" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial">17:30-18:50</font></td>
+             <td colspan="4" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#555555" size="2" face="Arial"><a href="#panel1" style="text-decoration:none">Panel1: Data Mining Challenges in Social Networks(FIT Auditorium)</a></font></td>
+             </tr>
+             <tr>
+             <td bgcolor="#aaaaaa" width="97" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#000000" size="2" face="Arial">19:00-21:00</font></td>
+             <td bgcolor="#aaaaaa" colspan="4" style="padding:5px 10px 5px 5px; border:1px solid #006699;"><font color="#000000" size="2" face="Arial">Banquet</font></td>
+             </tr>
+             </table>
+             -->
+            <br>
+            <p id="publication"><font size=4><b>SELECTED PUBLICATIONS</b></font> (<a
+                href="publication_list.html">A COMPLETE LIST</a>) &nbsp; <a href="#top">Go Top</a></p>
+            
+            <p><font size=3>
+                <b>Social Network Theories/Data Mining</b></font></p>
+            
+            <UL>
+                
+                <LI>Jie Tang, Zhanpeng Fang, and Jimeng Sun.
+                    Incorporating Social Context and Domain Knowledge for Instance Recognition.
+                    In <a href="http://www2015.it/"><i>Proceedings of the Twenty-Fourth World Wide Web Conference</i></a>
+                    (<a href="http://www2015.it/">WWW'15</a>).
+                </LI>
+                
+                <li>
+                    Jing Zhang, Jie Tang, Juanzi Li, Yang Liu, and Chunxiao Xing.
+                    Who Influenced You? Predicting Retweet via Social Influence Locality.
+                    <a href="http://tkdd.acm.org/">
+                        <i>ACM Transactions on Knowledge Discovery from Data</i></a>
+                    (<a href="http://tkdd.acm.org/">TKDD</a>), accepted. (<i>if</i> =1.419)
+                    [<a href="publications/TKDD15-Zhang-Tang-retweet-influence-locality.pdf">PDF</a>]
+                    [<a href="http://arnetminer.org/Influencelocality">Code&Data</a>]
+                        </li>
+                        
+                        
+                        <LI>Jie Tang, Chenhui Zhang, Keke Cai, Li Zhang, and Zhong Su.
+                        Sampling Representative Users from Large Social Networks.
+                        In <a href="http://www.aaai.org/Conferences/AAAI/aaai15.php"><i>Proceedings of the 29th AAAI Conference on Artificial Intelligence</i></a>
+                        (<a href="http://www.aaai.org/Conferences/AAAI/aaai15.php">AAAI'15</a>).
+                        [<a href="publications/AAAI15-Tang-Sampling-Representative-Users-from-Social-Networks.pdf">PDF</a>]
+                        [<a href="http://arnetminer.org/repuser">Data&Code</a>]
+                        </LI>
+                        
+                        <LI>Yang Yang, Jie Tang, Cane Wing-Ki Leung, Yizhou Sun, Qicong Chen, Juanzi Li, and Qiang Yang.
+                        RAIN: Social Role-Aware Information Diffusion.
+                        In <a href="http://www.aaai.org/Conferences/AAAI/aaai15.php"><i>Proceedings of the 29th AAAI Conference on Artificial Intelligence</i></a>
+                        (<a href="http://www.aaai.org/Conferences/AAAI/aaai15.php">AAAI'15</a>).
+                        [<a href="publications/AAAI15-Yang-Tang-RAIN.pdf">PDF</a>]
+                        [<a href="http://arnetminer.org/rain">Data&Code</a>]
+                        </LI>
+                        
+                        
+                        <LI>Yuxiao Dong, Yang Yang, Jie Tang, Yang Yang, and Nitesh V. Chawla.
+                        Inferring User Demographics and Social Strategies in Mobile Social Networks.
+                        In <a href="http://kdd.org/kdd2014/"><i>Proceedings of the Twentyth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i></a>
+                        (<a href="http://kdd.org/kdd2014/">KDD'14</a>).  pp. 15-24.
+                        [<a href="publications/KDD14-Dong-WhoAmI.pdf">PDF</a>]
+                        [<a href="publications/KDD14-Dong-et-al-Infer-demographics-madness.pdf">Madness</a>]
+                        [<a href="publications/KDD14-slides-WhoAmI-Demographic-prediction.pptx">Slides_PPT</a>]
+                        [<a href="publications/KDD14-slides-WhoAmI-Demographic-prediction.pdf">Slides_PDF</a>]
+                        [<a href="publications/KDD14-poster-WhoAmI-Demographic-Prediction.pdf">Poster</a>]
+                        [<a href="http://arnetminer.org/demographic">Data&Code</a>]
+                        [<a href="software/whoami.zip">Code Download</a>]
+                        (<a href="http://www.unglobalpulse.org/node/14795">Report by United Nations</a>)
+                        </LI>
+                        
+                        
+                        <LI>Mi Zhang, Jie Tang, Xuchen Zhang, Xiangyang Xue.
+                        Addressing Cold Start in Recommender Systems: A Semi-supervised Co-training Algorithm.
+                        In <a href="sigir.org/sigir2014/"><i>
+                        Proceedings of the 37th International ACM SIGIR Conference on Research and Development in Information Retrieval</i></a>
+                        (<a href="sigir.org/sigir2014/">SIGIR'14</a>). pp. 73-82.
+                        [<a href="publications/SIGIR14-Zhang-et-al-cold-start-recommendation.pdf">PDF</a>]
+                        </LI>
+                        
+                        
+                        
+                        <LI>Jing Zhang, Jie Tang, Honglei Zhuang, Cane Wing-Ki Leung, and Juanzi Li.
+                        Role-aware Conformity Influence Modeling and Analysis in Social Networks.
+                        In <a href="http://www.aaai.org/Conferences/AAAI/aaai14.php"><i>Proceedings of the 28th AAAI Conference on Artificial Intelligence</i></a>
+                        (<a href="http://www.aaai.org/Conferences/AAAI/aaai14.php">AAAI'14</a>). pp. 958-965.
+                        [<a href="publications/AAAI14-Zhang-et-al-Role-aware-Conformity-Influence.pdf">PDF</a>]
+                        [<a href="publications/AAAI2014-poster-jingzhang.pdf">Poster</a>]
+                        [<a href="http://arnetminer.org/roleconformity">Data&Code</a>]
+                        </LI>
+                        
+                        <LI>Yang Yang, Jia Jia, Shumei Zhang, Boya Wu, Qicong Chen, Juanzi Li, Chunxiao Xing, and Jie Tang.
+                        How Do Your Friends on Social Media Disclose Your Emotions?
+                        In <a href="http://www.aaai.org/Conferences/AAAI/aaai14.php"><i>Proceedings of the 28th AAAI Conference on Artificial Intelligence</i></a>
+                        (<a href="http://www.aaai.org/Conferences/AAAI/aaai14.php">AAAI'14</a>). pp. 306-312.
+                        [<a href="publications/AAAI14-Yang-et-al-Social-Emotion.pdf">PDF</a>]
+                        [<a href="publications/aaai14-slides-emotion.pptx">Slides_PPT</a>]
+                        [<a href="publications/aaai14-slides-emotion.pdf">Slides_PDF</a>]
+                        [<a href="publications/aaai14-poster-emotion.pdf">Poster</a>]
+                        [<a href="http://arnetminer.org/emotion">Data&Code</a>]
+                        </LI>
+                        
+                        <LI>Yang Yang, Walter Luyten, Lu Liu, Marie-Francine Moens, Jie Tang, and Juanzi Li.
+                        Forecasting Potential Diabetes Complications.
+                        In <a href="http://www.aaai.org/Conferences/AAAI/aaai14.php"><i>Proceedings of the 28th AAAI Conference on Artificial Intelligence</i></a>
+                        (<a href="http://www.aaai.org/Conferences/AAAI/aaai14.php">AAAI'14</a>). pp. 313-319.
+                        [<a href="publications/AAAI14-Yang-et-al-Diabetes-Pred-by-Sparse-Factor-Graph.pdf">PDF</a>]
+                        [<a href="publications/aaai14-slides-diabetes-complication.pptx">Slides_PPT</a>]
+                        [<a href="publications/aaai14-slides-diabetes-complication.pdf">Slides_PDF</a>]
+                        [<a href="publications/aaai14-poster-diabetes.pdf">Poster</a>]
+                        [<a href="http://arnetminer.org/diabetes">Data&Code</a>]
+                        </LI>
+                        
+                        <LI>Zhigang Wang, Juanzi Li, Shuangjie Li, Mingyang Li, Jie Tang, Kuo Zhang, and Kun Zhang.
+                        Cross-lingual Knowledge Validation Based Taxonomy Derivation from Heterogeneous Online Wikis.
+                        In <a href="http://www.aaai.org/Conferences/AAAI/aaai14.php"><i>Proceedings of the 28th AAAI Conference on Artificial Intelligence</i></a>
+                        (<a href="http://www.aaai.org/Conferences/AAAI/aaai14.php">AAAI'14</a>). pp. 180-186.
+                        [<a href="publications/AAAI14-Wang-et-al-Cross-lingual-Knowledge-base-Wikis.pdf">PDF</a>]
+                        [<a href="publications/AAAI14-Poster-Wang-taxonomy.pdf">Poster</a>]
+                        [<a href="software/aaai2014-wang-taxonomy.7z">Data</a>]
+                        </LI>
+                        
+                        <LI>Zhixin Li, Siqiang  Wen, Juanzi Li, Peng Zhang, and Jie Tang.
+                        On Modelling Non-linear Topical Dependencies.
+                        In <a href="http://icml.cc/2014/"><i>Proceedings of the 31st International Conference on Machine Learning</i></a>
+                        (<a href="http://icml.cc/2014/">ICML'14</a>). pp. 458-466.
+                        [<a href="publications/ICML14-Li-Non-linear-TM.pdf">PDF</a>]
+                        </LI>
+                        
+                        <LI>Hong Huang, Jie Tang, Sen Wu, Lu Liu, and Xiaoming Fu.
+                        Mining Triadic Closure Patterns in Social Networks.
+                        In <a href="http://www2014.org/"><i>Proceedings of the Twenty-Third World Wide Web Conference</i></a>
+                        (<a href="http://www2014.org/">WWW'14</a>). pp. 499-504.
+                        [<a href="publications/WWW14-Huang-et-al-triadic-closure-prediction.pdf">PDF</a>]
+                        [<a href="publications/WWW14-slides-Huang-et-al-Mining-Triadic-Closure.pptx">Slides_PPT</a>]
+                        [<a href="publications/WWW14-slides-Huang-et-al-Mining-Triadic-Closure.pdf">Slides_PDF</a>]
+                        </LI>
+                        
+                        <LI>Jie Tang, Sen Wu, and Jimeng Sun.
+                        Confluence: Conformity Influence in Large Social Networks.
+                        In <a href="http://kdd.org/kdd2013/"><i>Proceedings of the Ninteenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i></a>
+                        (<a href="http://kdd.org/kdd2013/">KDD'13</a>). pp. 347-355.
+                        [<a href="publications/KDD13-Tang-et-al-Conformity-Influence.pdf">PDF</a>]
+                        [<a href="publications/KDD13-Slides-Tang-Wu-Sun-Conformity-influence.pptx">Slides_PPT</a>]
+                        [<a href="publications/KDD13-Slides-Tang-Wu-Sun-Conformity-influence.pdf">Slides_PDF</a>]
+                        [<a href="publications/KDD13-poster-conformity-influence.pdf">Poster</a>]
+                        [<a href="http://arnetminer.org/Confluence">Data&Code</a>]
+                        (Oral Presentation)
+                        </LI>
+                        
+                        <LI>Yizhou Sun, Jie Tang, Jiawei Han, Cheng Chen, and Manish Gupta.
+                        Co-Evolution of Multi-Typed Objects in Dynamic Star Networks.
+                        <i> <a href="http://www.computer.org/portal/web/tkde">IEEE
+                        Transaction on Knowledge and Data Engineering</a></i>
+                        (<a href="http://www.computer.org/portal/web/tkde">TKDE</a>),
+                        (accepted).
+                        [<a href="publications/TKDE13-Sun-etl-al-co-evolution-of-multi-typed-objects-in-dynamic-networks.pdf">PDF</a>]
+                        </LI>
+                        
+                        <LI>Yi Cai, Ho-fung Leung, Qing Li, Hao Han, Jie Tang, Juanzi Li.
+                        Typicality-based Collaborative Filtering Recommendation.
+                        <i> <a href="http://www.computer.org/portal/web/tkde">IEEE
+                        Transaction on Knowledge and Data Engineering</a></i>
+                        (<a href="http://www.computer.org/portal/web/tkde">TKDE</a>), Volume 26, Issue 3, 2014, Pages 766-779. (<i>if</i>=1.55)
+                        [<a href="publications/TKDE14-Cai-et-al-Typicality-Based-recommendation.pdf">PDF</a>]
+                        </li>
+                        
+                        <LI>Jing Zhang, Biao Liu, Jie Tang, Ting Chen, and Juanzi Li.
+                        Social Influence Locality for Modeling Retweeting Behaviors.
+                        In<i>
+                        <a href="http://ijcai13.org/">Proceedings of the 23rd International Joint Conference
+                        on Artificial Intelligence</a></i> (<a
+                        href="http://ijcai13.org/">IJCAI'13</a>). pp. 2761-2767.
+                        [<a href="publications/IJCAI13-Zhang-et-al-social-influence-locality.pdf">PDF</a>]
+                        [<a href="http://arnetminer.org/Influencelocality">Data&Code</a>]
+                        [<a href="publications/IJCAI13-poster-influence-locality.pdf">Poster</a>]
+                        </LI>
+                        
+                        <LI>Lei Hou, Juanzi Li, Xiaoli Li, Jiangfeng Qu, Xiaofei Guo, Ou Hui, and Jie Tang.
+                        What Users Care about: a Framework for Social Content Alignment.
+                        In<i>
+                        <a href="http://ijcai13.org/">Proceedings of the 23rd International Joint Conference
+                        on Artificial Intelligence</a></i> (<a href="http://ijcai13.org/">IJCAI'13</a>). pp. 1401-1407.
+                        [<a href="publications/IJCAI13-Hou-et-al-social-content-alignment.pdf">PDF</a>]
+                        [<a href="publications/ijcai13-dataset-content-alignment.rar">Data</a> &
+                        <a href="publications/IJCAI13-content-alignment-ReadMe.txt">Readme</a>]
+                        [<a href="publications/IJCAI13-Slides-social_content_alignment.pdf">Slides_PDF</a>]
+                        [<a href="publications/IJCAI13-Poster-social-content-alignment.pdf">Poster</a>]
+                        </LI>
+                        
+                        <LI>Tiancheng Lou and Jie Tang.
+                        Mining Structural Hole Spanners Through Information Diffusion in Social Networks.
+                        In <a href="http://www2013.org/"><i>Proceedings of the Twenty-Second World Wide Web Conference</i></a>
+                        (<a href="http://www2013.org/">WWW'13</a>). pp. 837-848.
+                        [<a href="publications/WWW13-Lou&Tang-Structural-Hole-Information-Diffusion.pdf">PDF</a>] [<a href="publications/Jie-Tang-Mining-top-k-structural-hole-spanner-v2.pptx">Slides_PPT</a>]
+                        [<a href="publications/Jie-Tang-Mining-top-k-structural-hole-spanner-v2.pdf">Slides_PDF</a>]
+                        [<a href="http://arnetminer.org/structural-hole/">Data&Code</a>]
+                        </LI>
+                        
+                        <li>
+                        Tiancheng Lou, Jie Tang, John Hopcroft, Zhanpeng Fang, Xiaowen Ding.
+                        Learning to Predict Reciprocity and Triadic Closure in Social Networks.
+                        <a href="http://tkdd.acm.org/">
+                        <i>ACM Transactions on Knowledge Discovery from Data</i></a>
+                        (<a href="http://tkdd.acm.org/">TKDD</a>), Volume 7, Issue 2, July 2013,
+                        Article No. 5. (<i>if</i> =1.419)
+                        [<a href="publications/TKDD12-Lou-Tang-et-al-Reciprocity-and-Triadic-Closure.pdf">PDF</a>]
+                        [<a href="http://arnetminer.org/reciprocity">Code&Data</a>]
+                        [<a href="http://reciprocal.aminer.org">System</a>]
+                        </li>
+                        
+                        <LI id="2012kddbestposter">Jie Tang, Sen Wu, Jimeng Sun, and Hang Su.
+                        Cross-domain Collaboration Recommendation.
+                        In <a href="http://kdd2012.sigkdd.org/"><i>Proceedings of the Eighteenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i></a>
+                        (<a href="http://kdd2012.sigkdd.org/">KDD'12</a>). pp. 1285-1293.
+                        [<a href="publications/KDD12-Tang-et-al-Cross-Domain-Collaboration-Recommendation.pdf">PDF</a>]
+                        [<a href="publications/Jie Tang-Cross domain collaboration recommendation.pdf">Slides_PDF</a>
+                        &nbsp;
+                        <a href="publications/Jie Tang-Cross domain collaboration recommendation.pptx">Slides_PPT</a>
+                        ]
+                        [<a href="publications/KDD2012-Tang-et-al-cross-domain-collaboration.pdf">Poster</a>]
+                        [<a href="http://arnetminer.org/collaboration">Data&Code</a>]
+                            [<a href="http://arnetminer.org/collaborator">System</a>]
+                            [<a href="publications/KDD2012-Tang-cross-domain.mov">Video</a>]
+                            (<font color="red">Full Presentation & <b>Best Poster Award</b></font>)
+                            </LI>
+                            
+                            
+                            <LI>Jie Tang, Bo Wang, Yang Yang, Po Hu, Yanting Zhao, Xinyu Yan, Bo Gao, Minlie Huang, Peng Xu, Weichang Li, and Adam K. Usadi.
+                            PatentMiner: Topic-driven Patent Analysis and Mining.
+                            In <a href="http://kdd2012.sigkdd.org/"><i>Proceedings of the Eighteenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i></a>
+                            (<a href="http://kdd2012.sigkdd.org/">KDD'12</a>). pp. 1366-1374.
+                            [<a href="publications/KDD12-Tang-et-al-PatentMiner.pdf">PDF</a>]
+                            [<a href="publications/Jie Tang-Patentminer.pdf">Slides</a>]
+                            [<a href="publications/KDD2012-Tang-et-al-Patentminer.pdf">Poster</a>]
+                            [<a href="http://pminer.org">System</a>]
+                            [<a href="publications/kdd12-patentminer.mov">Video</a>]
+                            </LI>
+                            
+                            
+                            <LI id="2012jcdlbestnomination">Rui Yan, Congrui Huang, Jie Tang, Yan Zhang, and Xiaoming Li.
+                            To Better Stand on the Shoulder of Giants.
+                            In <a href="http://jcdl2012.info/"><i>Proceedings of the 2012 ACM/IEEE Joint Conference on Digital Libraries</i></a>
+                            (<a href="http://jcdl2012.info/">JCDL'12</a>). pp. 51-60.
+                            [<a href="publications/JCDL12-Yan-et-al-To-Better-Stand-on-the-Shoulder-of-Giants.pdf">PDF</a>]
+                            (<font color="red"><b>Nominated as Best Student Paper</b></font>)
+                            </LI>
+                            
+                            <LI>Jie Tang, Tiancheng Lou, and Jon Kleinberg.
+                            Inferring Social Ties across Heterogeneous Networks.
+                            In <a href="http://www.wsdm2012.org/"><i>Proceedings of the Fifth ACM International Conference
+                            on Web Search and Data Mining</i></a>
+                            (<a href="http://www.wsdm2012.org/">WSDM'12</a>). pp. 743-752. (Plenary presentation)
+                            [<a href="publications/WSDM12-Tang-et-al-inferring-social-tie-across-heterogeneous-networks.pdf">PDF</a>]
+                            [<a href="publications/slides-wsdm12-Tang-Lou-Jon-Inferring-Social-Ties-across-Hetergeneous-Networks.pdf">Slides</a>]
+                            [<a href="publications/poster-Infer-Social-Ties-across-Hetergeneous-Networks.pdf">Poster</a>]
+                            </LI>
+                            
+                            <LI>Jie Tang, Yuan Zhang, Jimeng Sun, Jinghai Rao, Wenjing Yu, Yiran Chen, and ACM Fong.
+                            Quantitative Study of Individual Emotional States in Social Networks.
+                            <i> <a href="http://www.computer.org/portal/web/tac">IEEE Transactions on Affective Computing</a></i>
+                            (<a href="http://www.computer.org/portal/web/tac">TAC</a>), 2012, Volume 3, Issue 2, Pages 132-144.
+                            [<a href="publications/TAC11-Tang-et-al-social-emotion-analysis.pdf">PDF</a>]
+                            (<font color="red"><b>Selected as the Spotlight Paper</b></font>. <a href="http://www.computer.org/portal/web/tac">Available here</a>)
+                            </li>
+                            
+                            
+                            <LI>Jie Tang, A.C.M. Fong, Bo Wang, and Jing Zhang.
+                            A Unified Probabilistic Framework for Name Disambiguation in Digital Library.
+                            <i> <a href="http://www.computer.org/portal/web/tkde">IEEE
+                            Transaction on Knowledge and Data Engineering</a></i>
+                            (<a href="http://www.computer.org/portal/web/tkde">TKDE</a>)
+                            , Volume 24, Issue 6, 2012, Pages 975-987.
+                            [<a href="publications/TKDE12-Tang-Name-Disambiguation.pdf">PDF</a>]
+                            </li>
+                            
+                            <LI>Bing He, Jie Tang, Ying Ding, Huijun Wang, Yuyin Sun, Jae Hong Shin, Bin Chen, Ganesh Moorthy, Judy Qiu, Pankaj Desai, David J. Wild.
+                            Mining relational paths in integrated biomedical data.
+                            <i>PLOS ONE</i>, 2011, 6(12). (<i>if</i> =4.351).
+                            [<a href="publications/PLOS11-He-et-al-Mining-relational-paths-in-integrated-biomedical-data.pdf">PDF</a>]
+                            </li>
+                            
+                            
+                            
+                            <LI>Jie Tang, Jing Zhang, Ruoming Jin, Zi Yang, Keke Cai, Li Zhang, and Zhong Su.
+                            Topic Level Expertise Search over Heterogeneous Networks.
+                            <a href="http://www.springer.com/computer/ai/journal/10994">
+                            <i>Machine Learning Journal</i></a>, Volume 82, Issue 2 (2011), Pages 211-237.
+                            [<a href="publications/MLJ11-Tang-et-al-topic-level-search-in-heterogeneous-networks.pdf">PDF</a>]
+                            [<a href="http://www.springerlink.com/content/rq1605260802844u/">URL</a>]</li>
+                            
+                            
+                            <li>
+                            Jie Tang, Limin Yao, Duo Zhang, and Jing Zhang.
+                            A Combination Approach to Web User Profiling.
+                            <a href="http://tkdd.acm.org/">
+                            <i>ACM Transactions on Knowledge Discovery from Data</i></a>
+                            (<a href="http://tkdd.acm.org/">TKDD</a>), (vol. 5 no. 1), Article 2 (December 2010), 44 pages.
+                            [<a href="publications/TKDD11-Tang-et-al-web-user-profiling.pdf">PDF</a>]
+                            </li>
+                            
+                            <LI>Wenbin Tang, Honglei Zhuang, and Jie Tang.
+                            Learning to Infer Social Ties in Large Networks.
+                            In <a href="http://www.ecmlpkdd2011.org/"><i>Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases</i></a>
+                            (<a href="http://www.ecmlpkdd2011.org/">ECML/PKDD'11</a>). pp.381-397.
+                            [<a href="publications/PKDD11-Tang-et-al-inferring-social-tie.pdf">PDF</a>]
+                            [<a href="publications/Slides-PKDD11-Tang-et-al-inferring-social-tie.pdf">Slides</a>]
+                            [<a href="http://arnetminer.org/socialtie">Data&Code</a>]
+                            (<font color="red"><b>Best Student Paper Runner-up</b></font>)
+                            </LI>
+                            
+                            <LI>Zi Yang, Keke Cai, Jie Tang, Li Zhang, Zhong Su, and Juanzi Li.
+                            Social Context Summarization.
+                            In <a href="http://www.sigir2011.org/"><i>
+                            Proceedings of the 34th International ACM SIGIR Conference on Research and Development in Information Retrieval</i></a>
+                            (<a href="http://www.sigir2011.org/">SIGIR'11</a>). pp. 255-264.
+                            [<a href="publications/SIGIR11-Yang-et-al-social-context-summarization.pdf">PDF</a>]
+                            </LI>
+                            
+                            <LI>Chenhao Tan, Lillian Lee, Jie Tang, Long Jiang, Ming Zhou, and Ping Li.
+                            User-level sentiment analysis incorporating social networks.
+                            In <a href="http://www.sigkdd.org/kdd2011/"><i>Proceedings of the Seventeenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i></a>
+                            (<a href="http://www.sigkdd.org/kdd2011/">SIGKDD'11</a>). pp. 1397-1405.
+                            [<a href="publications/KDD11-Tan-et-al-social-user-sentiment-analysis.pdf">PDF</a>]
+                            [<a href="publications/KDD11-poster-social-sentiment-analysis.jpg">Poster</a>]
+                            (<b>Top 4 cited papers among all KDD 2011's papers, </b>
+                            <a href="http://arnetminer.org/conference/kdd-2651.html?n=20&start=0">More...</a>)
+                            </LI>
+                            
+                            <LI>Chenhao Tan, Jie Tang, Jimeng Sun, Quan Lin, and Fengjiao Wang.
+                            Social Action Tracking via Noise Tolerant Time-varying Factor Graphs.
+                            In <a href="http://www.sigkdd.org/kdd2010/"><i>Proceedings of the Sixteenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i></a>
+                            (<a href="http://www.sigkdd.org/kdd2010/">SIGKDD'10</a>). pp. 1049-1058.
+                            [<a href="publications/KDD10-Tan-et-al-social-action-tracking.pdf">PDF</a>]
+                            [<a href="publications/KDD10-Tan-et-al-Social_Action_Tracking.pptx">Slides</a>]
+                            [<a href="http://arnetminer.org/stnt/">Data&Code</a>]
+                            </li>
+                            
+                            <LI>Chi Wang, Jiawei Han, Yuntao Jia, Jie Tang, Duo Zhang, Yintao Yu, and Jingyi Guo.
+                            Mining Advisor-Advisee Relationships from Research Publication Networks.
+                            In <a href="http://www.sigkdd.org/kdd2010/"><i>Proceedings of the Sixteenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i></a>
+                            (<a href="http://www.sigkdd.org/kdd2010/">SIGKDD'10</a>). pp. 203-212.
+                            [<a href="publications/KDD10-Wang-et-al-Advisor-relationship-mining.pdf">PDF</a>]
+                            [<a href="publications/KDD10-Wang-et-al-adv.pptx">Slides</a>]
+                            [<a href="http://arnetminer.org/viewperson.do?naid=1458619&name=Jie%20Tang#sn">System</a>]
+                            </li>
+                            
+                            <LI>Jie Tang, Jimeng Sun, Chi Wang, and Zi Yang. Social
+                            Influence Analysis in Large-scale Networks. In <a href="http://www.sigkdd.org/kdd2009/"><i>Proceedings of the Fifteenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i></a>
+                            (<a href="http://www.sigkdd.org/kdd2009/">SIGKDD'09</a>). pp. 807-816.
+                            [<a href="publications/KDD09-Tang-et-al-Social-Influence-Analysis.pdf">PDF</a>]
+                            [<a href="publications/KDD-2009-Tang-et-al-Social-Influence.pptx">Slides</a>]
+                            [<a href="http://arnetminer.org/lab-datasets/soinf/">Data</a>]
+                            [<a href="software/Topic-Affinity-Propagation.zip">Code</a>]
+                            (<b>Top 4 cited papers among all papers published at KDD 2009-2013's, </b>
+                            <a href="http://arnetminer.org/conference/kdd-2651.html?n=20&start=0">More...</a>)
+                            </li>
+                            
+                            <LI>Jie Tang, Jing Zhang, Limin Yao, Juanzi Li, Li Zhang,
+                            and Zhong Su. ArnetMiner: Extraction and Mining of Academic Social Networks. In
+                            <i><a href="http://www.sigkdd.org/kdd2008/">Proceedings of the Fourteenth ACM SIGKDD
+                            International Conference on Knowledge Discovery and Data Mining</a></i> (<a
+                            href="http://www.sigkdd.org/kdd2008/">SIGKDD'08</a>). pp.990-998.
+                            [<a href="publications/KDD08-Tang-et-al-ArnetMiner.pdf">PDF</a>]
+                            [<a href="publications/KDD08-Tang-et-al-Arnetminer.ppt">Slides</a>]
+                            [<a href="http://arnetminer.org">System</a>]
+                            [<a href="http://arnetminer.org/RESTful_service">API</a>]
+                            [<a href="http://arnetminer.org/citation">Citation Data</a>]
+                            [<a href="http://arnetminer.org/DBLP_Citation">DBLP Citation Data</a>]
+                            [<a href="http://keg.cs.tsinghua.edu.cn/jietang/software/ACT-code.zip">Author-Conference-Topic (ACT) Model (source code)</a>]
+                            [<a href="http://arnetminer.org/resources">More Data</a>]
+                            (<b>Top 3 cited papers among all KDD 2008's papers, </b>
+                            <a href="http://arnetminer.org/conference/kdd-2651.html?n=20&start=0">More...</a>)
+                            </LI>
+                            
+                            <LI>Jie Tang, Hang Li, Yunbo Cao, and Zhaohui Tang. Email Data Cleaning. In <i><a
+                            href="http://www.acm.org/sigs/sigkdd/kdd2005/">Proceedings of the Eleventh ACM
+                            SIGKDD International Conference on Knowledge Discovery and Data Mining</a> </i>(<a
+                            href="http://www.acm.org/sigs/sigkdd/kdd2005/">SIGKDD'05</a>). August 21-24, 2005, Chicago, Illinois, USA. Full paper. pp. 489-499
+                            [<a href="publications/f142-tang.pdf">PDF</a>]
+                            [<a href="publications/KDD05-Tang-et-al-Email-data-cleaning.ppt">Slides</a>]
+                            </LI>
+                            
+                            
+                            
+                            </UL>
+                            
+                            <p><font size=3><b>Semantic Web/Database</b></font></p>
+                            
+                            <UL>
+                            <LI>Zhichun Wang, Juanzi Li, and Jie Tang.
+                            Boosting Cross-lingual Knowledge Linking via Concept Annotation.
+                            In<i>
+                            <a href="http://ijcai13.org/">Proceedings of the 23rd International Joint Conference
+                            on Artificial Intelligence</a></i>
+                            (<a href="http://ijcai13.org/">IJCAI'13</a>). pp. 2733-2739.
+                            [<a href="publications/IJCAI13-Wang-et-al-knowledge_linking.pdf">PDF</a>]
+                            [<a href="publications/IJCAI13-poster-cross-lingual.pdf">Poster</a>]
+                            </LI>
+                            
+                            <LI>Zhigang Wang, Zhixing Li, Juanzi Li, Jie Tang, and Jeff Z. Pan.
+                            Transfer Learning Based Cross-lingual Knowledge Extraction for Wikipedia.
+                            In <i>
+                            <a href="http://acl2013.org/site/">Proceedings of the 51th
+                            Annual Meeting of the Association of Computational Linguistics</a></i> (<a
+                            href="http://acl2013.org/site/">ACL'13</a>). pp. 641-650.
+                            [<a href="publications/ACL13-Wang-et-al-Cross-Lingual-Know-Extraction.pdf">PDF</a>]
+                            [<a href="publications/acl13_Datasets.zip">Data</a> &
+                            <a href="publications/acl13_data_readme.txt">Readme</a>]
+                            </LI>
+                            
+                            <LI>Zhichun Wang, Juanzi Li, Zhigang Wang, and Jie Tang.
+                            Cross-lingual Knowledge Linking Across Wiki Knowledge Bases.
+                            In <a href="http://www2012.org/"><i>Proceedings of the Twenty-First World Wide Web Conference</i></a>
+                            (<a href="http://www2012.org/">WWW'12</a>). pp. 459-468.
+                            [<a href="publications/WWW12-Wang-et-al-knowledge-linking.pdf">PDF</a>]
+                            </LI>
+                            
+                            <LI>Juanzi Li, Jie Tang, Yi Li, and Qiong Luo.
+                            RiMOM: A Dynamic Multi-Strategy Ontology Alignment Framework.
+                            <i> <a href="http://www.computer.org/portal/web/tkde">IEEE
+                            Transaction on Knowledge and Data Engineering</i> (TKDE)</a>. August 2009 (vol. 21 no. 8) pp. 1218-1232.
+                            [<a href="publications/TKDE09-Li-Tang-et-al-Dynamic-mapping.pdf">PDF</a>]
+                            [<a href="http://www2.computer.org/portal/web/csdl/doi/10.1109/TKDE.2008.202">URL</a>]
+                            (<b>Top 4 cited papers among TKDE 2009-13's 500+ papers, </b>
+                            <a href="http://arnetminer.org/conference/ieee-trans-knowl-data-eng-5056.html?n=20&start=0">More...</a>)
+                            </li>
+                            
+                            
+                            <LI>Jie Tang, Ho-fung Leung, Qiong Luo, Dewei Chen, and
+                            Jibing Gong. Towards Ontology Learning from Folksonomies. In<i>
+                            <a href="http://ijcai-09.org/">Proceedings of the 21st International Joint Conference
+                            on Artificial Intelligence</a></i> (<a
+                            href="http://ijcai-09.org/">IJCAI'09</a>). pp. 2089-2095.
+                            [<a href="publications/IJCAI09-Tang-et-al-Ontology-Learning.pdf">PDF</a>]
+                            [<a href="publications/IJCAI09-Tang-et-al-Ontology-Learning-from-Folksonomies.ppt">Slides</a>]</li>
+                            
+                            <LI>Qian Zhong, Hanyu
+                            Li, Juanzi Li, Guotong Xie, Jie Tang, and Lizhu Zhou.
+                            A Gauss Function based Approach for Unbalanced Ontology Matching. In <i><a
+                            href="http://www.sigmod09.org/">Proceedings of the 2009 ACM SIGMOD
+                            international conference on Management of data</a></i> (<a
+                            href="http://www.sigmod09.org/">SIGMOD'09</a>). pp.669-680.
+                            [<a href="publications/SIGMOD09-Zhong-et-al-unbalanced-ontology-matching.pdf">PDF</a>] [Slides]</LI>
+                            
+                            <li>Feng Shi, Juanzi Li, and Jie Tang.
+                            Actively Learning Ontology Matching via User Interaction.
+                            In <a href="http://iswc2009.semanticweb.org/"><i>Proceedings of the 8th International
+                            Conference of Semantic Web</i></a>
+                            (<a href="http://iswc2009.semanticweb.org/">ISWC'09</a>). pp. 585-600.
+                            [<a href="publications/ISWC09-Shi-et-al-ontology-matching-user-interaction.pdf">PDF</a>]
+                            [<a href="publications/ISWC09-Shi-et-al-Active-Matching.ppt">Slides</a>]
+                            </li>
+                            
+                            <LI>Jie Tang, Mingcai Hong, Juanzi Li, and Bangyong Liang. Tree-Structured
+                            Conditional Random Fields for Semantic Annotation. In <i><a
+                            href="http://iswc2006.semanticweb.org/">Proceedings of the 5th International Conference of Semantic Web</a></i>
+                            (<a href="http://iswc2006.semanticweb.org/">ISWC'06</a>). pp. 640-653 [<a
+                            href="publications/ISWC06-Tang-et-al-TCRFs.ppt">PPT</a>] [<a
+                            href="publications/ISWC06-Tang-et-al-TCRFs.pdf">PDF</a>]</LI>
+                            
+                            <LI>Jie Tang, Juanzi Li, Bangyong Liang, Xiaotong Huang, Yi Li, and Kehong Wang.
+                            Using Bayesian Decision for Ontology Mapping. <i><a
+                            href="http://www.elsevier.com/wps/find/journaldescription.cws_home/671322/description#description">Journal of Web Semantics</a></i>, Vol(4)
+                            4:243-262, December 2006. (<i>if</i> =3.41)
+                            [<a href="http://dx.doi.org/10.1016/j.websem.2006.06.001">URL</a>]
+                            [<a href="publications/JWS06-Tang-et-al-Using%20Bayesian%20Decision%20to%20Mapping%20Ontology.pdf">PDF</a>]
+                            [<a href="http://keg.cs.tsinghua.edu.cn/project/RiMOM/">Software</a>]
+                            (<b>Top 8 cited papers in JWS's history, </b>
+                            <a href="http://www.elsevier.com/wps/find/journaldescription.cws_home/671322/description#description">More...</a>)
+                            </LI>
+                            </UL>
+                            
+                            
+                            <br>
+                            <p id="activities"><font size=4><b>ACADEMIC ACTIVITIES</b></font> &nbsp; <a href="#top">Go Top</a></p>
+                            <UL>
+                                <li><b>Editorial Board Member:</b>
+                                    <ul>
+                                        <li><a href="http://www.computer.org/portal/web/tbd">IEEE Transactions on Big Data (TBD)</a>
+                                            (<a href="http://www.computer.org/portal/web/tbd">IEEE TBD</a>)</li>
+                                        
+                                        <li><a href="http://www.springer.com/computer/database+management+%26+information+retrieval/journal/13278">Social Network Analysis and Mining Journal</a>
+                                            (<a href="http://www.springer.com/computer/database+management+%26+information+retrieval/journal/13278">SNAM</a>)</li>
+                                        <li><a href="http://www.journals.elsevier.com/expert-systems-with-applications/">Journal of Expert Systems with Applications</a>
+                                            (<a href="http://www.journals.elsevier.com/expert-systems-with-applications/">WSWA</a>)</li>
+                                        <li> Topics Editor-in-Chief of <a href="http://www.aicitglobal.org/jcit">Journal of Convergence of Information Technology</a>
+                                            (<a href="http://www.aicitglobal.org/jcit">JCIT</a>)</li>
+                                        <li>Guest Editor of Special Issue of <a
+                                            href="http://arnetminer.org/tist_cisn">Computational Models of Collective Intelligence in the Social Web</a> on <a href="http://tist.acm.org/">TIST</a> (<a href="http://tist.acm.org/">ACM Transactions on Intelligent Systems and Technology</a>)</li>
+                                        <li>Guest Editor of Special Issue of <a
+                                            href="http://arnetminer.org/TKDD_LDMTA">Large-scale Data Mining: Theory and Application</a> on <a href="http://tkdd.acm.org/">TKDD</a> (<a href="http://tkdd.acm.org/">ACM Transactions on Knowledge Discovery from
+                                                Data</a>)</li>
+                                        <li>  <a href="http://www.academypublisher.com/jsw/">Journal of
+                                            Software</a> (<a href="http://www.academypublisher.com/jsw/">JSW</a>)</li>
+                                        <li>  <a href="http://www.semantic-web-journal.net/">Semantic Web Journal</a>
+                                            (<a href="http://www.academypublisher.com/jait/index.html">SWJ</a>)</li>
+                                        <li>  <a href="http://www.icst.org/publications/transactions/26.html"> ICST Transactions on Social- Informatics</a>
+                                            <li>  <a href="http://www.academypublisher.com/jait/index.html">Journal of Advances
+                                                in Information Technology</a> (<a href="http://www.academypublisher.com/jait/index.html">JAIT</a>)</li>
+                                            </ul>
+                                </li>
+                                
+                                <li><b>Conference/Workshop Organization:</b>
+                                    <ul>
+                                        <li>Program Co-Chair of <a href="http://www.wsdm-conference.org/2015/">the 8th ACM International Conference on Web Search and Data Mining</a> (<a href="http://www.wsdm-conference.org/2015/">WSDM'15</a>)</li>
+                                        <li>Program Co-Chair of The 2015 International Conference on Social Network Analysis and Mining (ASONAM'15)</li>
+                                        <li>KDD CUP Co-Chair of <a href="http://www.kdd.org/kdd2015/">the 21th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</a>
+                                            (<a href="http://www.kdd.org/kdd2015/">KDD'15</a>)</li>
+                                        <li>Poster Co-Chair of <a href="http://www.kdd.org/kdd2014/">the 20th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</a>
+                                            (<a href="http://www.kdd.org/kdd2014/">KDD'14</a>)</li>
+                                        <li>Data Co-Chair of <a href="http://www.icwsm.org/2014/">the 8th International AAAI Conference on Weblogs and Social Media</a>
+                                            (<a href="http://www.icwsm.org/2014/">ICWSM'14</a>)</li>
+                                        <li>Tutorial Co-Chair of <a href="http://www.wsdm-conference.org/2014/">the 7th ACM International Conference on Web Search and Data Mining</a> (<a href="http://www.wsdm-conference.org/2014/">WSDM'14</a>)</li>
+                                        <li>Workshop Co-Chair of <a href="http://www.asonam2014.org/">The 2014 International Conference on Social Network Analysis and Mining</a>
+                                            (<a href="http://www.asonam2014.org/">ASONAM'14</a>)</li>
+                                        
+                                        <li>Vice Program Co-Chair of <a href="http://icdm2013.rutgers.edu/">the 12th IEEE International Conference on Data Mining</a>
+                                            (<a href="http://icdm2013.rutgers.edu/">ICDM'13</a>)</li>
+                                        
+                                        <li>Tutorial and workshop organization chair of <a href="http://www.ezconf.net/ijcai13/">the 23th International Joint Conference on Artificial Intelligence</a>
+                                            (<a href="http://www.ezconf.net/ijcai13/">IJCAI'13</a>)</li>
+                                        <li>Workshop Co-Chair of <a href="http://www.kdd.org/kdd2013/">the 19th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</a>
+                                            (<a href="http://www.kdd.org/kdd2013/">KDD'13</a>)</li>
+                                        <li>Poster Co-Chair of <a href="http://icdm2013.rutgers.edu/">the 12th IEEE International Conference on Data Mining</a>
+                                            (<a href="http://icdm2013.rutgers.edu/">ICDM'13</a>)</li>
+                                        <li>Workshop Co-Chair of <a href="http://recsys.acm.org/recsys13/">the 7th ACM Conference on Recommender Systems</a>
+                                            (<a href="http://recsys.acm.org/recsys13/">RecSys'13</a>)</li>
+                                        <li>Tutorial Co-Chair of <a href="http://asonam.cpsc.ucalgary.ca/">The 2013 International Conference on Social Network Analysis and Mining</a>
+                                            (<a href="http://asonam.cpsc.ucalgary.ca/">ASONAM'13</a>)</li>
+                                        
+                                        <li>Local Chair of <a href="http://www.kdd.org/kdd2012/">the 18th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</a>
+                                            (<a href="http://www.kdd.org/kdd2012/">KDD'12</a>)</li>
+                                        <li>Program Co-Chair of <a href="http://socinfo2012.com/">The 2012 International Conference on Social Informatics</a>
+                                            (<a href="http://socinfo2012.com/">SocInfo'12</a>)</li>
+                                        <li>Tutorial Co-Chair of <a href="http://www.asonam2012.etu.edu.tr">The 2012 International Conference on Social Network Analysis and Mining</a>
+                                            (<a href="http://www.asonam2012.etu.edu.tr">ASONAM'12</a>)</li>
+                                        
+                                        <li>Publications Co-Chairs of <a href="http://www.kdd.org/kdd2011/">the 17th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</a>
+                                            (<a href="http://www.kdd.org/kdd2011/">KDD'11</a>)</li>
+                                        <li>Program Chair of <a href="http://adma2011.arnetminer.org">the 7th International Conference on Advanced Data Mining and Applications</a>
+                                            (<a href="http://adma2011.arnetminer.org">ADMA'11</a>)</li>
+                                        <li>Publicity Co-Chair of <a href="http://webdocs.cs.ualberta.ca/~icdm2011/">the 11th IEEE International Conference on Data Mining</a>
+                                            (<a href="http://webdocs.cs.ualberta.ca/~icdm2011/">ICDM'11</a>)</li>
+                                        <li>Poster Chair of <a href="http://wiki.cse.cuhk.edu.hk/wsdm2011/home">the 4th ACM International Conference on Web Search and Data Mining</a>
+                                            (<a href="http://wiki.cse.cuhk.edu.hk/wsdm2011/home">WSDM'11</a>)</li>
+                                        <li>Area Chair of <a href="http://www.ecmlpkdd2011.org">the 2011 European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases</a>
+                                            (<a href="http://www.ecmlpkdd2011.org">ECML/PKDD'11</a>)</li>
+                                        <li>Panel Chair of <a href="http://cpscom.org">the 4th edition of the successful IEEE International Conferences on Cyber, Physical and Social Computing</a>
+                                            (<a href="http://cpscom.org">CPSCom'11</a>)</li>
+                                        <li>Publicity Co-Chair of <a href="http://www.sis.smu.edu.sg/SocInfo2011">the Third International Conference on Social Informatics</a>
+                                            (<a href="http://www.sis.smu.edu.sg/SocInfo2011">SocInfo'11</a>)</li>
+                                        <li>Vice Program Chair of <a href="http://liris.cnrs.fr/~wi-iat11/WI_2011/">the 2011 IEEE/WIC/ACM International Conference on Web Intelligence</a>
+                                            (<a href="http://liris.cnrs.fr/~wi-iat11/WI_2011/">WI'11</a>)</li>
+                                        
+                                        <li>Vice Program Chair of <a href="http://www.yorku.ca/wiiat10/index.php">the 2010 IEEE/WIC/ACM International Conference on Web Intelligence</a>
+                                            (<a href="http://www.yorku.ca/wiiat10/index.php">WI'10</a>)</li>
+                                        <li>Registration Chair of <a href="http://www.aswc2006.org/">ASWC'06</a> </li>
+                                        <li>Co-Chair of Workshop <a href="http://arnetminer.org/SWSM_2011">SWSM'11</a>
+                                            on <a href="http://http://www.sigir2011.org/">SIGIR'11</a>,
+                                            <a href="http://vivo-onto.slis.indiana.edu/MDS2011/">MDS'11</a>
+                                            on <a href="http://www.sigkdd.org/kdd2011/">SIGKDD'11</a>,
+                                            <a href="http://arnetminer.org/LDMTA2011">LDMTA'11</a>
+                                            on <a href="http://www.sigkdd.org/kdd2011/">SIGKDD'11</a>,
+                                            <a href="http://arnetminer.org/LDMTA2010">LDMTA'10</a>
+                                            on <a href="http://www.sigkdd.org/kdd2010/">SIGKDD'10</a>,
+                                            <a href="http://arnetminer.org/LDMTA2009">LDMTA'09</a>
+                                            on <a href="http://www.cs.umbc.edu/ICDM09/">ICDM'09</a>,
+                                            <a href="http://arnetminer.org/confs/SWSM2009">SWSM'09</a> on <a
+                                                href="http://www.comp.polyu.edu.hk/conference/cikm2009/">CIKM'09</a>,
+                                            <a href="http://www.aicit.org/niss/workshops.html#ws6">Financial Data Mining</a> (<a
+                                                href="http://www.aicit.org/niss/workshops.html#ws6">FDM'09</a>),
+                                            <a href="http://keg.cs.tsinghua.edu.cn/SWSM2008">SWSM'08</a> on <a
+                                                href="http://www2008.org/">WWW2008</a>.</li>
+                                    </ul>
+                                </li>
+                                
+                                
+                                <li><b>(S)PC Member:</b></li>
+                                <ul>
+                                    <li><B>2015:</B>
+                                        <a href="http://kdd.org/kdd2015/">SIGKDD'15 (SPC)</a>,
+                                        <a href="http://www.icwsm.org/2015/">ICWSM'15 (SPC)</a>,
+                                        <a href="http://www.siam.org/meetings/sdm15/">SDM'15</a>,
+                                        <a href="http://www.icde2015.kr">ICDE'15</a>,
+                                    </li>
+                                    
+                                    <li><B>2014:</B>
+                                        <a href="http://kdd.org/kdd2014/">SIGKDD'14 (SPC)</a>,
+                                        <a href="http://icdm2014.sfu.ca/">ICDM'14 (Area Chair)</a>,
+                                        <a href="http://www.wsdm-conference.org/2014/">WSDM'14</a>,
+                                        <a href="http://www.siam.org/meetings/sdm14/">SDM'14</a>,
+                                        <a href="http://www.icwsm.org/2014/">ICWSM'14</a>,
+                                        <a href="http://www.asonam2014.org/">ASONAM'14 (SPC)</a>
+                                    </li>
+                                    
+                                    <li><B>2013:</B>
+                                        <a href="http://kdd.org/kdd2013/">SIGKDD'13 (SPC)</a>,
+                                        <a href="http://www.ezconf.net/ijcai13/">IJCAI'13 (SPC)</a>,
+                                        <a href="http://www2013.org/">WWW'13 (Social Networks, Content Analysis, Bridging structured and unstructured data)</a>,
+                                        <a href="http://sigir2013.ie/">SIGIR'13</a>,
+                                        <a href="http://wsdm2013.org/">WSDM'13</a>,
+                                        <a href="http://www.siam.org/meetings/sdm13/">SDM'13</a>,
+                                        <a href="http://www.icwsm.org/2013/">ICWSM'13 (SPC)</a>,
+                                        <a href="http://www.cikm2013.org/">CIKM'13</a>,
+                                        <a href="http://www.acm.org/conferences/sac/sac2013/">SAC'13 (SPC)</a>,
+                                        <a href="http://totemdb.whu.edu.cn/dasfaa2013/">DASFAA'13</a>.
+                                    </li>
+                                    
+                                    <li><B>2012:</B>
+                                        <a href="http://kdd.org/kdd2012/">SIGKDD'12</a>,
+                                        <a href="http://www2012.org/">WWW'12 (Tutorial, Web Mining, Social Networks, Demo)</a>,
+                                        <a href="http://www.aaai.org/Conferences/AAAI/aaai12.php">AAAI'12</a>,
+                                        <a href="http://sigir.org/sigir2012/">SIGIR'12</a>,
+                                        <a href="http://icdm2012.ua.ac.be/">ICDM'12</a>,
+                                        <a href="http://www.icwsm.org/2012/">ICWSM'12 (SPC)</a>,
+                                        <a href="http://iswc2012.semanticweb.org">ISWC'12 (SPC)</a>.
+                                    </li>
+                                    
+                                    <li><B>2011:</B>
+                                        <a href="http://www.kdd.org/kdd2011/">SIGKDD'11</a>,
+                                        <a href="http://www.www2011india.com/home.html">WWW'11</a>,
+                                        <a href="http://www.aaai.org/Conferences/AAAI/aaai11.php">AAAI'11</a>,
+                                        <a href="http://wsdm2011.org/">WSDM'11</a>,
+                                        <a href="http://icdm2011.cs.ualberta.ca/">ICDM'11</a>,
+                                        <a href="http://iswc2011.semanticweb.org">ISWC'11</a> (SPC),
+                                        <a href="http://www.icmla-conference.org/icmla11/">ICMLA'11</a> (SPC),
+                                        <a href="http://conferences.inf.ed.ac.uk/emnlp2011/">EMNLP'11</a>,
+                                        <a href="http://www.cintec.cuhk.edu.hk/DASFAA2011/">DASFAA'11</a>,
+                                        <a href="http://asonam.im.nuk.edu.tw">ASONAM'11</a>,
+                                        <a href="http://totemdb.whu.edu.cn/waim2011/">WAIM'11</a>,
+                                        <a href="http://www.dexa.org/node/39">DEXA'11</a>.
+                                    </li>
+                                    
+                                    <li><B>2010:</B>
+                                        <a href="http://www.sigkdd.org/kdd2010/">SIGKDD'10</a>,
+                                        <a href="http://www.sigir2010.org/">SIGIR'10</a>,
+                                        <a href="http://www2010.org/www/">WWW'10 (DM&ML track)</a>,
+                                            <a href="http://acl2010.org/">ACL'10</a>,
+                                            <a href="http://www.coling-2010.org/index.htm">COLING'10</a>,
+                                            <a href="http://datamining.it.uts.edu.au/icdm10/">ICDM'10</a>,
+                                            <a href="http://wsdm2010.org/">WSDM'10</a>,
+                                            <a href="http://iswc2010.semanticweb.org/">ISWC'10</a>,
+                                            <a href="http://www.lsi.upc.edu/events/emnlp2010/">EMNLP'10</a>,
+                                            <a href="http://dasfaa2010.cs.tsukuba.ac.jp/">DASFAA'10</a>,
+                                            <a href="http://www.yorku.ca/wiiat10/index.php">WI'10</a>,
+                                            <a href="http://www.dexa.org/">DEXA'10</a>,
+                                            <a href="http://aimlab.cs.uoregon.edu/ISDPE10/index.html">ISDPE'10</a>,
+                                            <a href="http://asonam2010.hau.gr/">ASONAM'10</a>,
+                                            <a href="http://2010.cloudcom.org">CloudCom'10</a>,
+                                            <a href="http://incos2010.web.auth.gr/index.html">INCoS'10</a>.
+                                            </li>
+                                            
+                                            <li><B>2009:</B> <a href="http://www.sigir2009.org/">SIGIR'09</a>,
+                                            <a href="http://www.siam.org/meetings/sdm09/">SDM'09</a>, <a
+                                            href="http://www.dexa.org/">DEXA'09</a>, <a
+                                            href="http://wise2009.ae.poznan.pl/">WISE'09</a>, <a href="http://www.wi-iat09.disco.unimib.it/WI09/WIhome.htm">WI'09</a>, <a
+                                            href="http://www.iuiconf.org/">IUI'09</a>, <a href="http://www.asonam.org/">ASONAM'09</a>,
+                                            <a href="http://isccci.org/iccci-09/">ICCCI'09</a>, <a
+                                            href="http://www.acl-ijcnlp-2009.org/main/workshops.html">NLPIR4DL'09</a>, <a
+                                            href="http://siwn.org.uk/2009leipzig/MCPC09.htm">MCPC'09</a>, <a
+                                            href="http://www.cisis-conference.eu/">CISIS'09</a>, <a
+                                            href="http://www.mirlabs.org/cason09/">CASoN'09</a>, <a
+                                            href="http://apweb-waim09.suda.edu.cn/">APWeb-WAIM'09</a>, <a href="http://kdir.ic3k.org/">KDIR'09</a>,
+                                            <a href="http://www.cloudcom.org/">CloudCom'09</a>, <a
+                                            href="http://www-kb.ist.hokudai.ac.jp/AIRS2009/">AIRS'09</a>, </span><a
+                                            href="http://recsys.acm.org/">ACM RecSys'09</a>, <a href="#">SAW'09</a>,
+                                            <a href="http://www.icis09.org/">ICIS'09</a>,
+                                            <a href="http://iws.seu.edu.cn/csws2009/">CSWS'09</a>, <a
+                                            href="http://www.cais.ntu.edu.sg/~wsm2009/">WSM'09</a>,
+                                            <a href="http://wism-aici2009.shiep.edu.cn/">WISM'09-AICI'09</a>,
+                                            <a href="http://www.aswc2009.org/">ASWC'09</a>,
+                                            OEDM'09.</li>
+                                            
+                                            <li><b>2008:</b> <a href="http://www.ijcnlp2008.org/">IJCNLP'08</a>,
+                                            <a href="http://bis.kie.ae.poznan.pl/11th_bis/wscfp.php?ws=saw2008">SAW'08</a>,
+                                            <a href="http://www2008.org/CFP/posters.html">WWW'08
+                                            Poster Session</a>, <a href="http://siwn.org.uk/2008/NIMC08.htm">NIMC'08</a>,
+                                            <a href="http://www.swin.edu.au/hosting/socase2008/">SOCASE'08</a>,
+                                            <a href="htthttp://PGSC.do.isst.fraunhofer.de/">PGSC'08</a>, <a
+                                            href="http://workshops.socialnetworkanalysis.info/SNAKDD2008/">SNA-KDD'08</a>,
+                                            <a href="http://aswc2008.ait.ac.th/">ASWC'08</a>, <a
+                                            href="http://datamining.it.uts.edu.au/wi08/html/wi/">WI'08</a>, <a
+                                            href="http://www.softcomputing.net/~csn/">IWCSN'08</a>, <a href="http://oaei.ontologymatching.org/2007/">OAEI'08</a>(SPC).</li>
+                                            
+                                            <li><B>2007:</B> <a href="http://www.ict.swin.edu.au/conferences/socase2007/">SOCASE'07</a>,
+                                            <a href="http://vega.ict.ac.cn/gcc2007/workshop/PGSC07.html">PGSC'07</a>,
+                                            <a href="http://www.cs.sjsu.edu/wi07/wi/">WI'07</a>,
+                                            <a href="http://oaei.ontologymatching.org/2007/">OAEI'07</a>
+                                            (SPC).</li>
+                                            </ul>
+                                            
+                                            </ul>
+                                            
+                                            <br>
+                                            <p id="system"><font size=4><b>SYSTEM</b></font> &nbsp; <a href="#top">Go Top</a></p>
+                                            
+                                            <ul>
+                                                
+                                                <li style='margin-bottom:8.pt;'><a
+                                                    href="http://www.arnetminer.org/">ArnetMiner 6.0</a> (<a
+                                                        href="http://www.arnetminer.org/">Academic Researcher Social Network Search</a>).
+                                                    [<a href="http://arnetminer.org/introduction">Introduction</a>]
+                                                    [<a href="http://arnetminer.org/introduction#b362">Development
+                                                        Team</a>] [<a href="publications/social-mining-search.pptx">Talk@Leuven-on-social-mining-and-search</a>] <b><span style='color:red'>**</span></b></li>
+                                                
+                                                &nbsp;&nbsp;&nbsp;A project on academic researcher social network building, search, and mining. 
+                                                Partly supported by NSFC, National 863, Chinese Young Faculty Award, IBM Award, etc. 
+                                                The system have been demonstrated at <a
+                                                    href="http://www.kdd2007.com/">KDD'07</a>, <a
+                                                        href="http://www.sigkdd.org/kdd2008/">KDD'08</a>, <a href="http://www2008.org/">WWW'08</a>,
+                                                    <a href="http://iswc2007.semanticweb.org/">ISWC'07</a>. Presentation about the
+                                                    system has been made at <a href="http://www.msra.cn/">MSRA</a>, <a
+                                                        href="http://www.google.cn/">GOOGLE</a> China, <a
+                                                            href="http://www.cuhk.edu.hk/v6/en/">CUHK</a>, <a
+                                                                href="http://www.ust.hk/eng/index.htm">HKUST</a>. This is a <a
+                                                                    href="Reports/Arnetminer-at-CUHK.pdf">presentation</a> I have made at <a
+                                                                        href="http://www.ict.ac.cn/english/">ICT</a> and <a
+                                                                            href="http://www.cuhk.edu.hk/v6/en/">CUHK</a>. In this slides, I introduce the
+                                                                        motivation and the main ideas in <a href="http://arnetminer.org/">ArnetMiner</a>.
+                                                                        <br>New features include:
+                                                                        <ul>
+                                                                            <li>Bole search</li>
+                                                                            <li>Profile editing</li>
+                                                                            <li>Graph search and summarization</li>
+                                                                            <li>Sub-topic mining</li>
+                                                                            <li>...</li>
+                                                                        </ul>
+                                                                        <p style='text-indent:8.0pt;'>Miss <a href="http://keg.cs.tsinghua.edu.cn/project/PSN/">ArnetMiner 1.0</a> for ever.</p>
+                                                                        
+                                                                        <li style='margin-bottom:8.pt;'><a
+                                                                            href="http://keg.cs.tsinghua.edu.cn/jietang/software/KEG_CRF/">KEG_CRF</a> (<a
+                                                                                href="http://keg.cs.tsinghua.edu.cn/jietang/software/KEG_CRF/">A fast linear
+                                                                                conditional random fields (CRFs) tool</a>). [<a
+                                                                                    href="http://keg.cs.tsinghua.edu.cn/jietang/software/KEG_CRF/">Download</a>] </li>
+                                                                        &nbsp;&nbsp;&nbsp;A fast linear conditional
+                                                                        random fields tool. It is now used for researcher profiling in <a
+                                                                            href="http://www.arnetminer.org/">ArnetMiner</a> and Information extraction
+                                                                        from company annual report.
+                                                                        
+                                                                        <li style='margin-bottom:8.pt;'><a
+                                                                            href="http://keg.cs.tsinghua.edu.cn/project/RiMOM/">RiMOM</a> (<a
+                                                                                href="http://keg.cs.tsinghua.edu.cn/project/RiMOM/">Risk Minimization based
+                                                                                Ontology Mapping</a>). [<a
+                                                                                    href="http://keg.cs.tsinghua.edu.cn/project/RiMOM/download.html">Download</a>] </li>
+                                                                        &nbsp;&nbsp;&nbsp;A project on ontology
+                                                                        alignment (also ontology mapping).15/5/2009
+                                                                        
+                                                                        <li style='margin-bottom:8.pt;'><a
+                                                                            href="http://keg.cs.tsinghua.edu.cn/project/pswmp.htm">SWARMS</a> (<a
+                                                                                href="http://keg.cs.tsinghua.edu.cn/project/pswmp.htm">Semantic Web Aided Rich
+                                                                                Mining System</a>). </li>
+                                                                        &nbsp;&nbsp;&nbsp;A
+                                                                        project on semantic data management. Papers published at Workshop of Contexts
+                                                                        and Ontologies on AAAI'05, ASWC'06, SKG'06, etc.
+                                            </ul>
+                                            
+                                            
+                                            <br>
+                                            <p id="awards"><font size=4><b>AWARDS and HORNORS</b></font> &nbsp; <a href="#top">Go Top</a></p>
+                                            <ul>
+                                                <li><a href="http://www.ccf.org.cn/sites/ccf/ccfqn.jsp">2012 CCF Young Scientist Award</a></li>
+                                                <li>2012 NSFC Excellent Young Scholar</li>
+                                                <li>2011 Beijing Science and Technology Star</li>
+                                                <li>2011 SCOPUS National Youth Science Star</li>
+                                                <li> <a href="http://public.dhe.ibm.com/software/dw/university/innovation/2010_scalable_analytics_recipients.pdf">
+                                                    2010 IBM Scalable Data Analytics Innovation Faculty Award</a>.
+                                                </li>
+                                                <li>2010 Tsinghua Academic New Star Award</li>
+                                                
+                                                <li>2012 JCDL Best Student Paper Nomination</li>
+                                                <li>2011 PKDD Best Student Paper Runnerup</li>
+                                                
+                                                
+                                                <li>2012 Best employee of <a
+                                                    href="http://www.cs.tsinghua.edu.cn/">DCST</a>, <a
+                                                        href="http://www.tsinghua.edu.cn/eng/">Tsinghua University</a>.</li>
+                                                
+                                                <li>2011 Best employee of <a
+                                                    href="http://www.tsinghua.edu.cn/eng/">Tsinghua University</a>.</li>
+                                                
+                                                <li>2011 Best employee of <a
+                                                    href="http://www.cs.tsinghua.edu.cn/">DCST</a>, <a
+                                                        href="http://www.tsinghua.edu.cn/eng/">Tsinghua University</a>.</li>
+                                                
+                                                <li>2007 Best employee of <a
+                                                    href="http://www.cs.tsinghua.edu.cn/">DCST</a>, <a
+                                                        href="http://www.tsinghua.edu.cn/eng/">Tsinghua University</a>.</li>
+                                                
+                                                <li>Nominated as candidates for the 2006 Best PhD Thesis
+                                                    Award of <a href="http://www.ccf.org.cn/">China Computer Federation</a></li>
+                                                
+                                                <li>The 2006 Excellent
+                                                    PhD Thesis of <a href="http://www.tsinghua.edu.cn/eng/">Tsinghua University</a></li>
+                                                
+                                                <!--
+                                                 <li>The 2005 first class scholarship of <a
+                                                 href="http://www.tsinghua.edu.cn/eng/">Tsinghua University</a> (IBM
+                                                 scholarship) (Only two at DCST and four at Tsinghua University
+                                                 every year.)</li>
+                                                 
+                                                 <li>The 2004 first
+                                                 class scholarship of <a href="http://www.tsinghua.edu.cn/eng/">Tsinghua
+                                                 University</a> (Intel scholarship) (Only two at DCST and five at Tsinghua University every year.)</li>
+                                                 
+                                                 <li>The 2003 first
+                                                 class scholarship of <a href="http://www.tsinghua.edu.cn/eng/">Tsinghua
+                                                 University</a> (MITSUBISHI Scholarship)</li>
+                                                 -->
+                                            </ul>
+                                            <br>
+                                            
+                                            <p><font size=4><b>RESOURCES</b></font> &nbsp; <a href="#top">Go Top</a></p>
+                                            
+                                            <ul>
+                                                <li>A <a href="Conference_list.htm">Conference/Journal List</a> Organized by me and My
+                                                    Friends</li>
+                                                
+                                                <li>An interesting polls: <a href="http://www.kdnuggets.com/polls/2008/conferences-submitted-papers.htm">To
+                                                    which conferences did you submit a paper in the last 2 years</a></li>
+                                            </ul>
+                                            
+                                            
+                                            
+                                            
+                                            <br>
+                                            <p id="talks"><font size=4><b>INVITED TALKS</b> &nbsp; <a href="#top">Go Top</a></font>
+                                            
+                                            <ul>
+                                                
+                                                <li>Social Influence and Information Diffusion
+                                                    [<a href="publications/2014-social-influence-and-information-diffusion.pptx">Slides Download</a>]
+                                                    [<a href="publications/2014-social-influence-and-information-diffusion.pdf">PDF Version</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>December 2014, invited talk given at <a href="https://www.cse.ust.hk/bigdataworkshop/"> the 2nd HKUST-USC Joint Workshop on Big Data Applications</a> (<a href="https://www.cse.ust.hk/bigdataworkshop/">BigData Workshop</a>).
+                                                    </li>
+                                                </ul>
+                                                
+                                                
+                                                <li>Computational Models for Social Network Analysis --User Modeling, Social Tie, and Group Formation
+                                                    [<a href="publications/2014-compoutational-model-sna.pptx">Slides Download</a>]
+                                                    [<a href="publications/2014-compoutational-model-sna.pdf">PDF Version</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>August 2014, Seminar given at <a href="http://www.ccf.org.cn/sites/ccf/adldongtai.jsp?contentId=2809353647679"> the 49th China Computer Federation on Advanced Disciplines Lectures</a>
+                                                        (<a href="http://www.ccf.org.cn/sites/ccf/adldongtai.jsp?contentId=2809353647679">CCF ADL 49</a>)</li>
+                                                </ul>
+                                                
+                                                <li>Computational Models for Social Networks--Social Influence and Its Applications. 
+                                                    [<a href="publications/Jie tang-social influence.pdf">PDF Version</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>August 2014, Invited talk given at Notre Dame University.
+                                                    </li>
+                                                </ul>
+                                                
+                                                <li>Computational Models for Social Networks--Social Influence and Structural Hole. 
+                                                    [<a href="publications/Jie tang-social influence and information diffusion-v3.pptx">Slides Download</a>]
+                                                    [<a href="publications/Jie tang-social influence and information diffusion-v3.pdf">PDF Version</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>May 2014, Invited talk given at Nanjing University, Southeast University, and Nanjing University of Aeronautics and Astronautics. 
+                                                    </li>
+                                                </ul>
+                                                
+                                                <li>XuetangX--The Platform for Chinese MOOC. 
+                                                    [<a href="publications/xuetangX-www14.pptx">Slides Download</a>]
+                                                    [<a href="publications/xuetangX-www14.pdf">PDF Version</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>April 2014, Invited talk given at <a href="http://www2014.org/program/webet-2014"> WWW'14 Workshop on Web-based Education Technologies</a>
+                                                        (<a href="http://www2014.org/program/webet-2014">WebET'14</a>)</li>
+                                                </ul>
+                                                
+                                                <li>Models and Algorithms for Social Influence Analysis.
+                                                </li>
+                                                <ul>
+                                                    <li>April 2014, Tutorial given at <a href="http://www2014.org/">the Twenty-Second World Wide Web Conference (WWW'14)</a> [<a href="publications/WWW14-tutorial-social-influence-analysis.pptx">Slides Download</a>]
+                                                        [<a href="publications/WWW14-tutorial-social-influence-analysis.pdf">PDF Version</a>]
+                                                    </li>  	
+                                                    <li>February 2013, Tutorial given at <a href="http://www.wsdm2013.org/">the Sixth ACM International Conference on Web Search and Data Mining (WSDM'13)</a> [<a href="publications/WSDM13-tutorial-social-influence-analysis.pptx">Slides Download</a>]
+                                                        [<a href="publications/WSDM13-tutorial-social-influence-analysis.pdf">PDF Version</a>]
+                                                    </li>  	
+                                                </ul>
+                                                
+                                                <li>SAE: Social Analytic Engine for Large-scale Networks.
+                                                </li>
+                                                <ul>
+                                                    <li>December 2013, Keynote given at <a href="http://kdd.csd.uwo.ca/BigMUD.html"> ICDM Workshop on Mining and Understanding from Big Data</a>
+                                                        (<a href="http://kdd.csd.uwo.ca/BigMUD.html">BigMUD'13</a>)</li>
+                                                </ul>
+                                                
+                                                <li>Cross-domain Link Prediction and Recommendation.
+                                                </li>
+                                                <ul>
+                                                    <li>December 2014, Keynote given at <a href="http://icdm2014.sfu.ca/">ICDM 2014</a> Workshop on 
+                                                        <a href="http://lamda.nju.edu.cn/conf/softwaremining14/">Software Mining</a>.
+                                                        [<a href="publications/2014-Jie-Tang-cross-domain-collaboration-recommendation.pptx">Slides Download</a>]
+                                                        [<a href="publications/2014-Jie-Tang-cross-domain-collaboration-recommendation.pdf">PDF Version</a>]
+                                                    </li>
+                                                    
+                                                    <li>December 2013, Seminar given at <a href="http://www.ccf.org.cn/sites/ccf/xhdtnry.jsp?contentId=2771337645909"> the 45th China Computer Federation on Advanced Disciplines Lectures</a>
+                                                        (<a href="http://www.ccf.org.cn/sites/ccf/xhdtnry.jsp?contentId=2771337645909">CCF ADL 45</a>) [<a href="publications/Jie Tang-Cross-domain-link-pred&rec.pptx">Slides Download</a>]
+                                                        [<a href="publications/Jie Tang-Cross-domain-link-pred&rec.pdf">PDF Version</a>]</li>
+                                                </ul>
+                                                
+                                                <li>Mining Structural Hole Spanners in Social Networks.
+                                                    [<a href="publications/Jie-Tang-Mining-top-k-structural-hole-spanner-v2.pptx">Slides Download</a>]
+                                                    [<a href="publications/Jie-Tang-Mining-top-k-structural-hole-spanner-v2.pdf">PDF Version</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>August 2013, Seminar given at Department of Computer Science, UIUC</li>
+                                                    <li>December 2013, Seminar given at Anhui University</li>
+                                                </ul>
+                                                
+                                                
+                                                <li>Computational Models for Social Networks.
+                                                    [<a href="publications/2013-social-network-models.pptx">Slides Download</a>]
+                                                    [<a href="publications/2013-social-network-models.pdf">PDF Version</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>November 2013, Seminar given at <a href="http://www.ccf.org.cn/sites/ccf/nianduneirong.jsp?contentId=2746975754970"> the 46th China Computer Federation on Advanced Disciplines Lectures</a>
+                                                        (<a href="http://www.ccf.org.cn/sites/ccf/nianduneirong.jsp?contentId=2746975754970">CCF ADL 46</a>)</li>
+                                                    <li>July 2013, Tutorial given at <a href="http://ccir2013.sxu.edu.cn/"> the 19th China Conference on Information Retrieval</a>
+                                                        (<a href="http://ccir2013.sxu.edu.cn/">CCIR'13</a>)</li>
+                                                </ul>
+                                                
+                                                <li>From Sentiment to Emotion Analysis in Social Networks.
+                                                </li>
+                                                <ul>
+                                                    <li>August 2013, Keynote given at <a href="http://soccom.kmi.open.ac.uk/pansom2013/"> IJCAI'2013 Workshop on Understanding the Positive and Negative Sides of Social Media</a>
+                                                        (<a href="http://soccom.kmi.open.ac.uk/pansom2013/">PANSOM'13</a>)
+                                                        [<a href="publications/PANSOM13-Tang-Sentiment-Emotion-Social-Networks.pptx">Slides Download</a>]
+                                                        [<a href="publications/PANSOM13-Tang-Sentiment-Emotion-Social-Networks.pdf">PDF Version</a>]
+                                                    </li>
+                                                    <li>May 2013, Keynote given at <a href="http://www.nudt.edu.cn/yssnlp2013"> the Tenth Young Scholar Symposium on Natural Language Processing</a>
+                                                        (<a href="http://www.nudt.edu.cn/yssnlp2013">YSSNLP'13</a>)
+                                                        [<a href="publications/YSSNLP13-Tang-Sentiment-Emotion-Social-Networks.pptx">Slides Download</a>]
+                                                        [<a href="publications/YSSNLP13-Tang-Sentiment-Emotion-Social-Networks.pdf">PDF Version</a>]
+                                                    </li>
+                                                </ul>
+                                                
+                                                
+                                                <li>Data2Knowledge: Mining Data Semantics--Principles and Case Studies.
+                                                    [<a href="publications/WWW13-Tang-Ding-mining-data-semantics.pptx">Slides Download</a>]
+                                                    [<a href="publications/WWW13-Tang-Ding-mining-data-semantics.pdf">PDF Version</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>May 2013, Tutorial given at <a href="http://www2013.org/">the Twenty-Second World Wide Web Conference</a>
+                                                        (<a href="http://www2013.org/">WWW'13</a>)</li>
+                                                </ul>
+                                                
+                                                <li>Social Influence Analysis in Large Social Networks.
+                                                    [<a href="publications/2012-Jie-Tang-social-influence.pdf">Slides Download</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>December 2012, Symposium on Social Computing and Natural Language Processing</li>
+                                                </ul>
+                                                
+                                                
+                                                
+                                                <li>Computataional Aspects of Social Machines.
+                                                    [<a href="publications/2012-Jie-Tang-Social-machines.pdf">Slides Download</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>November 2012, <a href="http://www.ccf.org.cn/sites/ccf/xhdtnry.jsp?contentId=2699455734610">SWWS 2012 Panel on Social Machines</a></li>
+                                                </ul>
+                                                
+                                                
+                                                <li>Social Tie Analysis--Computational Aspects.
+                                                    [<a href="publications/2012-Jie-Tang-Social-tie-analysis.pdf">Slides Download</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>October 2012, <a href="http://www.ccf.org.cn/sites/ccf/xhdtnry.jsp?contentId=2699455734610">YOCSEF symposium on Deep Social Network Analysis</a></li>
+                                                </ul>
+                                                
+                                                
+                                                <li>User Behavior Modeling in Big Data. (in Chinese)
+                                                    [<a href="publications/User-behavior-modeling-in-big-data.pdf">Slides Download</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>September 2012, Keynote given at <a href="http://ftf.focuschina.com/">FTF'12</a></li>  	
+                                                </ul>
+                                                
+                                                <li>Models and Algorithms for Social Influence Analysis.
+                                                    [<a href="publications/Asonam12-tutorial-social-influence-analysis.pdf">Slides Download</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>August 2012, Tutorial given at <a href="http://www.asonam2012.etu.edu.tr/">The 2012 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM'12)</a></li>  	
+                                                </ul>
+                                                
+                                                
+                                                <li>AMiner: Deep Analysis and Mining for Academic Social Networks.
+                                                    [<a href="publications/2012-Jie-Tang-AMiner.pdf">Slides Download</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>December 2013, Rensselaer Polytechnic Institute</li>
+                                                    <li>September 2012, <a href="http://168.160.16.186/conference/dome_ch/2012/Default.aspx">National Knowledge Organization and Linking Conference</a></li>  	
+                                                </ul>
+                                                
+                                                
+                                                <li>Social Influence, Community Kernels, and Structural Holes.
+                                                    [<a href="publications/2012-Jie-Tang-Influence-kernel-structural-hole.pdf">Slides Download</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>March 2012, <a href="http://www.ccf.org.cn/sites/ccf/nry.jsp?contentId=2662476528843">YOCSEF symposium on Data Mining and Information Security</a></li>  	
+                                                </ul>
+                                                
+                                                
+                                                <li>Social Prediction in Mobile Networks.
+                                                    [<a href="publications/Jie-Tang-Social-Prediction-in-Mobile-Networks.pdf">Slides Download</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>December 2011, <a href="http://www.ccf.org.cn/sites/ccf/nry.jsp?contentId=2645196552525">YOCSEF symposium on Mobile Social Networks</a></li>  	
+                                                </ul>
+                                                
+                                                
+                                                <li>ArnetMiner: Extraction and Mining of Academic Social Networks.
+                                                    [<a href="publications/Jie-Tang-Arnetminer-Deep-Analysis-and-Mining-for-Academic-Social-Networks.pdf">Slides Download</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>August 2011, YOCSEF symposium on Large-scale Semantic Computing and Extendable Computing</li>  	
+                                                    <li>December 2010, <a href="http://www.oracle.com/javaone/index.html">Oracle JaveOne Develop</a></li>
+                                                    <li>August 2010, IBM TJ Watson Research Center</li>
+                                                    <li>May 2010, Leuven University</li>  	
+                                                    <li>December 2009, Peking University</li>
+                                                    <li>December 2009, ShenZhen Institute of Tsinghua University </li>
+                                                    <li>September 2009, Huazhong University of Science and Technology</li>
+                                                    <li>July 2009, Univ. of Illinois at Urbana-Champaign</li>
+                                                    <li>July 2009, IBM TJ Watson Research Center</li>
+                                                    <li>July 2008, Google China Inc.</li>
+                                                    <li>April 2008, Microsoft Research Asia</li>
+                                                    <li>December 2007, Chinese University of Hong Kong</li>
+                                                    <li>December 2007, Institute of Computing Technology Chinese Academy of Sciences</li>
+                                                </ul>
+                                                <li>Colorful Social Networks: Inferring Social Ties in Large-scale Networks.
+                                                    [<a href="publications/Jie-Tang-Inferring-Social-Ties.pdf">Slides Download</a>]
+                                                </li>
+                                                <ul>
+                                                    <li>October 2011, Uncertainty and Granular Computing, 2011</li>
+                                                    <li>May 2011, <a href="http://datamining.it.uts.edu.au/pakdd2011/index.php?option=com_content&view=article&id=25&Itemid=93">The PAKDD Doctoral Symposium on Data Mining (DSDM'11)</a></li>
+                                                    <li>January 2011, Kyoto University</li>
+                                                    <li>August 2010, Indiana University 
+                                                        [<a href="publications/Jie-Tang-relationship-mining-in-social-networks.pdf">Slides Download</a>]
+                                                    </li>  	
+                                                </ul>
+                                                
+                                                <li>Social Influence Analysis and Social Prediction.
+                                                    [<a href="publications/Jie-Tang-social-influence-analysis-and-prediction.pdf">Slides Download</a>]	
+                                                </li>
+                                                <ul>
+                                                    <li>December 2010, Aukland University</li>
+                                                    <li>November 2010, Fudan University</li>
+                                                    <li>August 2010, IBM TJ Watson Research Center
+                                                        [<a href="publications/Jie-Tang-Social-Influence-and-Action-Prediction-via-Factor-Graph-Models.pdf">Slides Download</a>]	
+                                                    </li>
+                                                    <li>August 2010, Sino-German Workshop on Internet of Things</li>  
+                                                    <li>May 2009, Hong Kong University of Science and Technology</li>
+                                                </ul>  
+                                                <li>Social Prediction: Can we predict users' action and emotions?
+                                                    [<a href="publications/Jie-Tang-Can-we-predict-users-action-and-emotions.pdf">Slides Download</a>]	
+                                                </li>
+                                                <ul>
+                                                    <li>May 2011, <a href="http://datamining.it.uts.edu.au/bi/bi2011/">PAKDD 2011 Workshop on Behavior Informatics</a></li>
+                                                    <li>December 2010, Microsoft Research Asia</li>
+                                                </ul>   
+                                                <li>Web-based Social Network Mining Theory, Methodologies, and Applications.
+                                                    [<a href="publications/Jie-Tang-Complex-Social-Network-Mining.pdf">Slides Download</a>]	
+                                                </li>
+                                                <ul>
+                                                    <li>August 2010, Tompson Inc.</li>  
+                                                    <li>January 2010, Nokia China Research Center.</li>
+                                                </ul>
+                                                <li>PatentMiner: Topic-level IP Trend Monitoring and Analysis.
+                                                    [<a href="publications/Jie-Tang-PatentMiner-Topic-level-IP-Trend-Monitoring-and-Analysis.pdf">Slides Download</a>]	
+                                                </li>  
+                                                <ul>
+                                                    <li>August 2010, ExxonMobil Inc.</li>  
+                                                </ul>
+                                                <li>From Dynamic to Unbalanced Ontology Matching.
+                                                    [<a href="publications/Jie-Tang-Ontology-Matching.pdf">Slides Download</a>]	
+                                                </li>  
+                                                <ul>
+                                                    <li>May 2009, Chinese University of Hong Kong</li>  
+                                                </ul>
+                                            </ul>
+                                            
+                                            <br>	
+                                            <p id="students"><font size=4><b>Advising</b> &nbsp; <a href="#top">Go Top</a></font>
+                                            </p>
+                                            
+                                            <p><font size=3><b>Post Doc</b></font></p>
+                                            
+                                            <ul>
+                                                <li>Huaiyu Wan</li>
+                                                <li>Daifeng Li (now work at Baidu)</li>
+                                            </ul>
+                                            
+                                            <p><font size=3><b>PhD Students</b></font></p>
+                                            
+                                            <ul>
+                                                <li>Ningping Wang</li>
+                                                <li>Yutao Zhang</li>
+                                                <li>Yu Han</li>
+                                                <li><a href="http://yangy.org/">Yang Yang</a> (co-advisor)</li>
+                                                <li><a href="http://keg.cs.tsinghua.edu.cn/persons/zhangjing/">Jing Zhang</a> (co-advisor)</li>
+                                            </ul>
+                                            
+                                            
+                                            <p><font size=3><b>Master Students</b></font></p>
+                                            
+                                            <ul>
+                                                <li>Zhanpeng Fang</li>
+                                                <li>Jianfei Wang</li>
+                                                <li>Mu Yang</li>
+                                                <li>Wenbin Tang (graduated in 2013)</li>
+                                                <li>Lenin Mookiah (graduated in 2013)</li>
+                                                <li>Yongliang Zhu (graduated in 2012)</li>
+                                                <li>Wenyuan Xu (graduated in 2012)</li>
+                                                <li><a href="http://keg.cs.tsinghua.edu.cn/persons/yangzi">Zi Yang</a> (graduated in 2011, now PhD at CMU)</li>
+                                                <li><a href="http://www.cs.umass.edu/~lmyao/">Limin Yao</a> (co-advisor, graduated in 2008, now PhD at UMass) </li>
+                                                <li><a href="http://sifaka.cs.uiuc.edu/~dzhang22/">Duo Zhang</a> (co-advisor, graduated in 2007, now PhD at UIUC) </li>
+                                            </ul>
+                                            
+                                            <p><font size=3><b>Undergraduate Students</b></font> (working with me for at least 8 months. I may miss some. Please let me know if you found.)</p>
+                                            
+                                            <ul>
+                                                <li><b>Current</b></li>
+                                                <ul>
+                                                    <li><a href="http://kimiyoung.github.io/">Zhilin Yang</a></li>
+                                                    <li>Chenghui Zhang</li>
+                                                    <li>Xinyu Zhou</li>
+                                                    <li>Zhongjie Qiu</li>
+                                                    <li>Weiran He</li>
+                                                    <li>Honghao Wei</li>
+                                                    <li>Cong Ma</li>
+                                                    <li>Xunkai Zhang</li>
+                                                    <li>Fei Xia</li>
+                                                    <li>Zhelun Wu</li>
+                                                    <li>Wei Huang</li>
+                                                    <li>Qian Zhang</li>
+                                                    <li>Ye Cao</li>
+                                                </ul>
+                                                
+                                                <li><b>Graduated in 2014</b></li>
+                                                <ul>
+                                                    <li>Qianru Zhu (MS at CMU)</li>
+                                                    <li>Yang Liu </li>
+                                                    <li>Yihan Sun (PhD at CMU)</li>
+                                                    <li>Yaohui Ye</li>
+                                                    <li>Ning Jiang (U Mitch)</li>
+                                                    <li>Chenran Guan (MS at CMU)</li>
+                                                    <li>Jingyuan Liu</li> 
+                                                </ul>
+                                                
+                                                <li><b>Graduated in 2013</b></li>
+                                                <ul>
+                                                    <li><a href="http://web.engr.illinois.edu/~hzhuang3/">Honglei Zhuang</a> (PhD at UIUC)</li>
+                                                    <li><a href="http://keg.cs.tsinghua.edu.cn/senwu/">Sen Wu</a> (MS at Stanford)</li>
+                                                    <li>Zhanpeng Fang (MS at THU)</li>
+                                                    <li>Liangtao Zhang (Work)</li>
+                                                    <li>Bo Ma (MS at CMU)</li>
+                                                    <li>Wei Chen (MS at CMU)</li>
+                                                </ul>
+                                                
+                                                
+                                                <li><b>Graduated in 2012</b></li>
+                                                <ul>
+                                                    <li>Xiaowen Ding (MS at CMU)</li>
+                                                    <li>Yanting Zhao (PhD at Columbia U.)</li>
+                                                    <li>Yu Zhao (MS at CMU)</li>
+                                                    <li>Cheng Chen (PhD at MIT)</li>
+                                                    <li>Lin Xu</li>
+                                                    <li>Hang Su (PhD at Georgia Tech.)</li>
+                                                    <li>Tian Li (Dartmouth College)</li>
+                                                    <li>Yuxiao Dong (PhD at Notre Dame U.)</li>
+                                                    <li>Yubing Dong (MS at USC)</li>
+                                                </ul>
+                                                
+                                                <li><b>Graduated in 2011</b></li>
+                                                <ul>
+                                                    <li>Yuan Zhang (PhD at MIT)</li>
+                                                    <li>Lixin Shi (PhD at MIT)</li>
+                                                    <li>Tao Lei (PhD at MIT)</li>
+                                                    <li>Xuezhi Wang (PhD at CMU)</li>
+                                                    <li>Yuan Du (MS at Columbia U.)</li>
+                                                    <li>Yiran Chen (PhD at MSU)</li>
+                                                    <li>Jingyi Guo (PhD at UMass)</li>
+                                                    <li>Rui Du (MS at CMU)</li>
+                                                    <li>Wenjing Yu (MS at USC)</li>
+                                                    <li>Haoquan Guo (MS at NYU)</li>
+                                                </ul>
+                                                
+                                                <li><b>Graduated in 2010</b></li>
+                                                <ul>
+                                                    <li><a href="http://www.cs.berkeley.edu/~nzhang/">Ning Zhang</a> (PhD at UC, Berkeley)</li>
+                                                    <li><a href="http://www.cs.cornell.edu/~chenhao">Chenhao Tan</a> (PhD at Cornell)</li>
+                                                    <li>Zhe Wang (work in Beijing)</li>
+                                                </ul>
+                                                
+                                                <li><b>Graduated in 2009</b></li>
+                                                <ul>
+                                                    <li><a href="http://www.cs.illinois.edu/homes/chiwang1/">Chi Wang</a> (PhD at UIUC)</li>
+                                                    <li>Fengjiao Wang (PhD at UIC)</li>
+                                                </ul>
+                                                
+                                                <li><b>Graduated before 2009</b></li>
+                                                <ul>
+                                                    <li>Liu Liu (CMU and now Google, US)</li>
+                                                    <li>Yize Li (UCSC, and now StumbleUpon, US)</li>
+                                                </ul>
+                                                
+                                            </ul>
+                                            
+                                            <p><font size=3><b>Other students collaborated with me</b></font></p>
+                                            
+                                            <ul>
+                                                <li>Ming Yin (2011, PhD at Havard)</li>
+                                                <li>Yajie Miao (2011, PhD at CMU)</li>  
+                                            </ul>
+                                            
+                                            <p>Visites since Jan. 26, 2013. <a
+                                                href="http://xyz.freelogs.com/stats/j/jerytang/" target="_top"><img border=0 width=96 height=23 id="_x0000_i1029"
+                                                    src="http://xyz.freelogs.com/counter/index.php?u=jerytang&amp;s=7seg"
+                                                    alt="Free Web Counter"></a><script  src="http://xyz.freelogs.com/counter/script.php?u=jerytang">
+                                                        </script></p>
+                                                    
+                                                    
+                                                    <p >Last updated date: Jan. 26, 2013, by <a
+                                                        href="http://keg.cs.tsinghua.edu.cn/jietang/">Jie Tang</a>.</p>
+                                                    
+                                                    
+                                                    <p><a
+                                                        href="http://www4.clustrmaps.com/counter/maps.php?url=http://keg.cs.tsinghua.edu.cn/persons/tj"
+                                                        id=clustrMapsLink><img border=0 width=160 height=106 id="_x0000_i1028"
+                                                            src="http://www4.clustrmaps.com/counter/index2.php?url=http://keg.cs.tsinghua.edu.cn/persons/tj"
+                                                            alt="Locations of visitors to this page"></a></p>
+                                                    
+                                                    <p><script  src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+                                                        </script><script  type="text/javascript">
+                                                            _uacct = "UA-1156684-1";
+                                                            urchinTracker();
+                                                            </script></p>
+                                                        
+    </body>
     
-    <div class="icon">
-        <h5>Dec</h5>
-        <b>28</b>
-    </div>
-    
-    <div class="text">
-        <h4>酒是这Young学生节演出</h4>
-        <p>王妃、bleeding、you give love a bad name、私奔、花房姑娘。歌神强势回归，滑板鞋high翻全场。</p>
-        <a href="#"><img src="./index_files/button_readmore.png" alt="Read More"></a>
-    </div>
+</html>
 
-<div class="icon">
-<h5>Nov</h5>
-<b>1</b>
-</div>
-
-<div class="text">
-<h4>校歌赛原创组决赛：最佳原创歌曲奖</h4>
-<p>在清华大学第24届校歌赛原创组决赛的舞台上，Splay的"Bleeding"荣获“最佳原创歌曲奖”。</p>
-<a href="#"><img src="./index_files/button_readmore.png" alt="Read More"></a>
-</div>
-</div>
-</div>
-</div>
-<div class="push"></div> 
-</div> 
-
-<div id="footer"> 
-<div class="content">
-
-
-<div class="flickline"></div>
-
-<div id="standards">
-
-<div class="top"></div>
-</div>
-
-</div>
-</div>
-
-</body></html>
